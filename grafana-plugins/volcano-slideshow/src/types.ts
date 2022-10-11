@@ -1,6 +1,10 @@
 import { DataQuery, DataSourceJsonData } from '@grafana/data';
 
 export interface MyQuery extends DataQuery {
+  volcanoID: string;
+  img_rate: string;
+  starttime: string;
+  endtime: string;
 }
 
 export const defaultQuery: Partial<MyQuery> = {};

@@ -8,10 +8,10 @@ import {
   MutableDataFrame,
   FieldType,
   dateTime,
-  VariableModel,
+  // VariableModel,
 } from '@grafana/data';
 
-import { getTemplateSrv } from '@grafana/runtime';
+// import { getTemplateSrv } from '@grafana/runtime';
         
 import { MyQuery, MyDataSourceOptions, defaultQuery } from './types';
 
@@ -33,13 +33,13 @@ const volImageNames: volNameMap = {
 const path = 'https://images.geonet.org.nz/volcano/cameras/images/';
 
 // Extend VariableModel  to avoid ts errors
-interface ExtendedVariableModel extends VariableModel {
-  current: {
-	selected: boolean,
-	value: string;
-	text: string;
-  }
-}
+// interface ExtendedVariableModel extends VariableModel {
+//   current: {
+// 	selected: boolean,
+// 	value: string;
+// 	text: string;
+//   }
+// }
 
 export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
   constructor(instanceSettings: DataSourceInstanceSettings<MyDataSourceOptions>) {
@@ -73,24 +73,36 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
       var endtimeS: string;
     
       // -- get variables of the dashboard
-      const variables = getTemplateSrv().getVariables() as ExtendedVariableModel[];
+      // const variables = getTemplateSrv().getVariables() as ExtendedVariableModel[];
 
       // get volcanoID
-      const var_VolID = variables.find(({ name }) => name === "volcanoID");
-      if (var_VolID && typeof var_VolID.current !== 'undefined') {
-        VolcanoID = var_VolID.current.value;
-      }
-      else {
-        VolcanoID = ""
+      // const var_VolID = variables.find(({ name }) => name === "volcanoID");
+      // if (var_VolID && typeof var_VolID.current !== 'undefined') {
+      //   VolcanoID = var_VolID.current.value;
+      // }
+      // else {
+      //   VolcanoID = ""
+      // }
+
+      if ( query.volcanoID !== "undefined" ) {
+        VolcanoID = query.volcanoID
+      } else {
+        VolcanoID = "ruapehu-north"
       }
 
       // get image-rate
-      const var_step = variables.find(({ name }) => name === "imagerate");
-      if (var_step && typeof var_step.current !== 'undefined') {
-        img_rate = var_step.current.value;
-      }
-      else {
-        img_rate = "10min";
+      // const var_step = variables.find(({ name }) => name === "imagerate");
+      // if (var_step && typeof var_step.current !== 'undefined') {
+      //   img_rate = var_step.current.value;
+      // }
+      // else {
+      //   img_rate = "10min";
+      // }
+
+      if ( query.img_rate !== "undefined" ) {
+        img_rate = query.img_rate
+      } else {
+        img_rate = "10min"
       }
 
       if ( img_rate === "5min" ) {
@@ -105,24 +117,36 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
         time_step = 7200;
       }
 
-      // get starttime 
-      const var_start = variables.find(({ name }) => name === "starttime");
-      if (var_start && typeof var_start.current !== 'undefined') {
-        starttimeS = var_start.current.value;
-      }
-      else {
-        starttimeS = fromS;
+      // get endtime 
+      // const var_start = variables.find(({ name }) => name === "starttime");
+      // if (var_start && typeof var_start.current !== 'undefined') {
+      //   starttimeS = var_start.current.value;
+      // }
+      // else {
+      //   starttimeS = fromS;
+      // }
+
+      if ( query.starttime !== "undefined" ) {
+        starttimeS = query.starttime
+      } else {
+        starttimeS = fromS
       }
 
       const fromDT = dateTime(starttimeS)
 
       // get endtime 
-      const var_end = variables.find(({ name }) => name === "endtime");
-      if (var_end && typeof var_end.current !== 'undefined') {
-        endtimeS = var_end.current.value;
-      }
-      else {
-        endtimeS = toS;
+      // const var_end = variables.find(({ name }) => name === "endtime");
+      // if (var_end && typeof var_end.current !== 'undefined') {
+      //   endtimeS = var_end.current.value;
+      // }
+      // else {
+      //   endtimeS = toS;
+      // }
+
+      if ( query.endtime !== "undefined" ) {
+        endtimeS = query.endtime
+      } else {
+        endtimeS = toS
       }
 
       const toDT = dateTime(endtimeS)
