@@ -17,17 +17,17 @@ import { MyQuery, MyDataSourceOptions, defaultQuery } from './types';
 
 type volNameMap = { [id: string]: string };
 const volImageNames: volNameMap = {
-  'ruapehu-north': 'DISC.01',
-  'ruapehu-south': 'MTSR.01',
-  'ruapehu-ngauruhoe': 'KMTP.01',
+  'ruapehunorth': 'DISC.01',
+  'ruapehusouth': 'MTSR.01',
+  'ruapehungauruhoe': 'KMTP.01',
   'ngauruhoe': 'DISC.02',
   'taranaki': 'TEMO.02',
-  'raoul-island': 'RIMK.01',
+  'raoulisland': 'RIMK.01',
   'tongariro': 'KAKA.01',
-  'tongariro-temaari-crater': 'TOKR.01',
-  'white-island-crater-rim': 'WINR.02',
+  'tongarirotemaari-crater': 'TOKR.01',
+  'whiteislandcraterrim': 'WINR.02',
   'whakatane': 'WHOH.02',
-  'white-island-west-rim': 'WIWR.01',
+  'whiteislandwestrim': 'WIWR.01',
 };
 
 const path = 'https://images.geonet.org.nz/volcano/cameras/images/';
