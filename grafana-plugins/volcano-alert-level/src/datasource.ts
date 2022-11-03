@@ -61,6 +61,7 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
           fields: [
             { name: 'volcanoTitle', type: FieldType.string},
             { name: 'volcanoID', type: FieldType.string},
+            { name: 'alert_color', type: FieldType.string},
             { name: 'acc', type: FieldType.string },
             { name: 'activity', type: FieldType.string },
             { name: 'hazards', type: FieldType.string},
@@ -72,8 +73,19 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
 
         response.forEach((point: any) => {
           if ( point.properties.volcanoID === query.volcanoID ) {
+            var alert_color: string;
+            if ( point.properties.level === 0 ) {
+              alert_color = "#E7DEEC";
+            } else if ( point.properties.level === 1 ) {
+              alert_color = "#DCC9E0";
+            } else if ( point.properties.level === 2 ) {
+              alert_color = "#D1B5D3";
+            } else {
+              alert_color = "White";
+            }
             frame.appendRow([point.properties.volcanoTitle, 
                             point.properties.volcanoID, 
+                            alert_color,
                             point.properties.acc,
                             point.properties.activity,
                             point.properties.hazards,
