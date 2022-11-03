@@ -1,10 +1,4 @@
 
-// import {
-//   readFile
-// } from "fs";
-
-import * as fs from "fs";
-
 import {
   DataQueryRequest,
   DataQueryResponse,
@@ -15,52 +9,67 @@ import {
   // dateTime,
 } from '@grafana/data';
 
+import { getBackendSrv } from '@grafana/runtime';
 
 import { MyQuery, MyDataSourceOptions } from './types';
 
-const path = "/home/admin/rapid";
+const path =  "https://sftp.gns.cri.nz/pub/sigrun/rapid/";
 
 export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
   constructor(instanceSettings: DataSourceInstanceSettings<MyDataSourceOptions>) {
     super(instanceSettings);
   }
 
-  async query(options: DataQueryRequest<MyQuery>): Promise<DataQueryResponse> {
-    const promises = options.targets.map((query) => {
+  async doRequest(query: MyQuery) {
+    const response = await getBackendSrv().datasourceRequest({
+      method: 'GET',
+      url:  path + query.siteID + "8h.NEU",
+    });
 
-      const full_path = path + query.siteID + "8h.NEU"
-      const frame = new MutableDataFrame({
-        refId: query.refId,
-        name: query.siteID,
-        fields: [
-          { name: "time", type: FieldType.number },
-          { name: "north", type: FieldType.number },
-          { name: "err_n", type: FieldType.number },
-          { name: "east", type: FieldType.number },
-          { name: "err_e", type: FieldType.number },
-          { name: "vertical", type: FieldType.number },
-          { name: "err_u", type: FieldType.number },
-        ],
-      });
-
-      fs.readFileSync(full_path, function(err, data){
-        if (err) throw err;
-
-        const all_lines = data.toString().replace(/\r\n/g, "\n").split("\n");
-
-        for (let i = 0; i < all_lines.length-1; i++){
-          const line = all_lines[i];
-          const vals = line.split(/\s+/);
-          frame.appendRow([vals[0], vals[1], vals[2], vals[4], vals[5], vals[7], vals[8]]);
-        }
-
-      });
-
-          return frame;
-      });
-
-    return Promise.all(promises).then((data) => ({ data }));
+    return response.data
   }
+
+  async query(options: DataQueryRequest<MyQuery>): Promise<DataQueryResponse> {
+    const promises = options.targets.map((query) => 
+      this.doRequest(query).then((response) => {
+        var resp_split = response.split("\n");
+        const frame = new MutableDataFrame({
+          refId: query.refId,
+          name: query.siteID,
+          fields: [
+            { name: "time", type: FieldType.number },
+            { name: "north", type: FieldType.number },
+            { name: "err_n", type: FieldType.number },
+            { name: "east", type: FieldType.number },
+            { name: "err_e", type: FieldType.number },
+            { name: "vertical", type: FieldType.number },
+            { name: "err_u", type: FieldType.number },
+          ],
+        });
+
+        resp_split.forEach((line: any) => {
+          const values = line.split(/\s+/);
+          var t = values[0];
+          var north = values[1];
+          var err_n = values[2];
+          var east = values[4];
+          var err_e = values[5];
+          var vertical = values[7];
+          var err_u = values[8];
+
+          if (isNaN(north) || north == null) {
+            console.log("found a NaN or a null here!");
+          } else {
+            frame.appendRow([t, north, err_n, east, err_e, vertical, err_u]);
+          };
+        });
+
+        return frame;
+      })
+    );
+    
+    return Promise.all(promises).then((data) => ({ data }));
+  };
 
   async testDatasource() {
     // Implement a health check for your data source.
