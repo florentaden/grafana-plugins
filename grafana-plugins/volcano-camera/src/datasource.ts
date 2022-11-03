@@ -69,7 +69,7 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
       }
 
       var i_init: number;
-      const image_number: number = +query.image_number;
+      const image_number: number = query.image_number;
 
       if ( image_number < 1) {
         i_init = 0;
