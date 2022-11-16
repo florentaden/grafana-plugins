@@ -1,0 +1,26 @@
+version: '3.4'
+
+services: 
+
+  api-app:
+    build: ./api
+    ports:
+      - $API_HOST_PORT:$API_CONT_PORT
+    expose:
+      - $API_CONT_PORT
+    volumes:
+      - $HOSTPATH_RAPID:$CONTPATH_RAPID
+
+  grafana:
+    image: $IMAGE:$VERSION
+    ports:
+      - $GRA_HOST_PORT:$GRA_CONT_PORT
+    expose:
+      - $GRA_CONT_PORT
+    links:
+      - api-app
+
+networks:
+  default:
+    name: rapidnet
+    external: true
