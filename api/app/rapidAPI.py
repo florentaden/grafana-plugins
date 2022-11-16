@@ -4,7 +4,7 @@ import datetime
 import json
 from glob import glob
 from fastapi import FastAPI
-
+from fastapi.middleware.cors import CORSMiddleware
 
 def convert_time(val):
     val = float(val)
@@ -38,6 +38,14 @@ for filename in filelist:
         print(f"Failed to read {filename}: {err_msg}")
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://kaizen.gns.cri.nz:3001"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 async def root():

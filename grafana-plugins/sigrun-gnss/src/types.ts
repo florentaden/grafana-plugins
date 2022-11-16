@@ -1,7 +1,8 @@
 import { DataQuery, DataSourceJsonData } from '@grafana/data';
 
 export interface MyQuery extends DataQuery {
-  siteID: string
+  siteID: string;
+  period: string;
 }
 
 export const defaultQuery: Partial<MyQuery> = {};

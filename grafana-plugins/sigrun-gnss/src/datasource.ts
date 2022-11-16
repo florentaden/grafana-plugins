@@ -13,7 +13,7 @@ import { getBackendSrv } from '@grafana/runtime';
 
 import { MyQuery, MyDataSourceOptions } from './types';
 
-const path =  "https://sftp.gns.cri.nz/pub/sigrun/rapid/";
+const path =  "http://api-app:8000/data/?"; // assuming the rapidAPI container is running and has been built with the docker compose
 
 export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
   constructor(instanceSettings: DataSourceInstanceSettings<MyDataSourceOptions>) {
@@ -23,7 +23,7 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
   async doRequest(query: MyQuery) {
     const response = await getBackendSrv().datasourceRequest({
       method: 'GET',
-      url:  path + query.siteID + "8h.NEU",
+      url:  path + "siteID=" + query.siteID + "&period=" + query.period,
     });
 
     return response.data
