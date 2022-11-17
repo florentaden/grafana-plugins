@@ -39,22 +39,27 @@ for filename in filelist:
 
 app = FastAPI()
 
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=["http://kaizen.gns.cri.nz:3001"],
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://kaizen.gns.cri.nz:3001"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=["*"]
 )
 
 @app.get("/")
 async def root():
-    return f"Try adding one of these siteID: {data.keys()} after /data/siteID=<station-name>"
+    return "Build query such as:\n  'http://api-app:8000/data/?siteID=<station-name>&period=<period>'\n!so far only period=8h is available!"
 
 
 @app.get("/data/")
 async def read_data(siteID: str, period: str = "8h"):
     key = siteID+period
-    item = data[key].to_json(orient="records")
-    json_item = json.loads(item)
-    return json_item
+    result = data[key].to_json(index=False, orient="table")
+    parsed = json.loads(result)
+    return parsed

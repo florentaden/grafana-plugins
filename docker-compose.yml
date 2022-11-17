@@ -18,7 +18,7 @@ services:
     expose:
       - $GRA_CONT_PORT
     links:
-      - api-app
+      - api-app:kaizen.gns.cri.nz
 
 networks:
   default:
