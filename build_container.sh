@@ -1,19 +1,30 @@
 
+NAME="vdb-testing"
 VER="0.1"
-GP="/home/faden/work/dashboard/grafana-plugins"
+HOST_PORT="3000"
+CONTAINER_PORT="3000"
+
+# -- localhost path
+DASHBOARDS_HOSTPATH="/home/faden/work/dashboard/dashboards"
+DATASOURCE_HOSTPATH="/home/faden/work/dashboard/plugins"
+PROVISION_HOSTPATH="/home/faden/work/dashboard/provisioning"
+
+# -- container path
+DASHBOARDS_CONTAINERPATH="/var/lib/grafana/dashboards"
+DATASOURCE_CONTAINERPATH="/var/lib/grafana/plugins"
+PROVISION_CONTAINERPATH="/etc/grafana/provisioning"
 
 # -- Build docker container
-docker build -t grafana_dev:$VER . &&
+docker build -t $NAME:$VER . &&
 
 # -- Run docker container 
 docker run -d \
- -p 3000:3000 \
- grafana_dev:$VER
- #-v $GP:/var/lib/grafana/plugins \
- #grafana_dev:$VER
+ -p $HOST_PORT:$CONTAINER_PORT \
+ -e GF_DEFAULT_APP_MODE='development' \
+ $NAME:$VER
 
 # -- Find Grafana
-CONTAINER=`docker ps | grep grafana_dev:$VER | awk '{print $1}'`
+CONTAINER=`docker ps | grep $NAME:$VER | awk '{print $1}'`
 PORT=`docker inspect $CONTAINER | grep HostPort | tail -1 | awk -F\" '{print $4}'`
 
 echo grafana_dev:$VER up and running $CONTAINER
