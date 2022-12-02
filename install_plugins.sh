@@ -1,8 +1,9 @@
 
 BASEPATH="/var/lib/grafana/plugins"
-for plugin_name in volcano-camera volcano-alert-level 
+for PLUGIN in volcano-camera volcano-alert-level fits-observation fits-spatial-observation fits-sites quakesearch seis-stations static-plots
 do
-	cd $BASEPATH/$plugin_name
+	echo "### INSTALLING $PLUGIN ###"
+	cd $BASEPATH/$PLUGIN
 	yarn install 
 	yarn dev
 done 

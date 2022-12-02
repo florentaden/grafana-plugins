@@ -1,0 +1,583 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 6,
+  "iteration": 1669957915421,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 19,
+      "panels": [],
+      "title": "Slideshow using dashboard variables and query parameters",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "gns-volcano-slideshow-v3",
+        "uid": "NAu661v4z"
+      },
+      "gridPos": {
+        "h": 18,
+        "w": 12,
+        "x": 0,
+        "y": 1
+      },
+      "id": 16,
+      "options": {
+        "alt_field": "",
+        "height": "75",
+        "icon_field": "",
+        "open_url": {
+          "base_url": "",
+          "enable": false,
+          "metric_field": "",
+          "suffix": ""
+        },
+        "overlay": {
+          "bindings": {
+            "bindings": [],
+            "has_text": true,
+            "unbounded": "#66666620"
+          },
+          "field": "",
+          "height": {
+            "size": 5,
+            "unit": "%"
+          },
+          "position": "Top right",
+          "width": {
+            "size": 5,
+            "unit": "%"
+          }
+        },
+        "singleFill": true,
+        "slideshow": {
+          "duration": 3000,
+          "enable": true,
+          "pauseOnHover": true,
+          "transition": "Fade",
+          "transition_duration": 1000
+        },
+        "tooltip": false,
+        "tooltip_date_elapsed": false,
+        "tooltip_field": "",
+        "tooltip_include_date": false,
+        "tooltip_include_field": true,
+        "underline": {
+          "bindings": {
+            "bindings": [],
+            "has_text": true,
+            "unbounded": "#CCCCDCFF"
+          },
+          "bindings_field": "",
+          "field": "",
+          "text_align": "left",
+          "text_size": "14"
+        },
+        "width": "75"
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "gns-volcano-slideshow-v3",
+            "uid": "NAu661v4z"
+          },
+          "end_varname": "endtime",
+          "imgrate_varname": "imagerate",
+          "refId": "A",
+          "start_varname": "starttime",
+          "volID_varname": "volcanoID"
+        }
+      ],
+      "type": "dalvany-image-panel"
+    },
+    {
+      "datasource": {
+        "type": "gns-volcano-slideshow-v3",
+        "uid": "NAu661v4z"
+      },
+      "gridPos": {
+        "h": 18,
+        "w": 12,
+        "x": 12,
+        "y": 1
+      },
+      "id": 17,
+      "options": {
+        "alt_field": "",
+        "height": "75",
+        "icon_field": "",
+        "open_url": {
+          "base_url": "",
+          "enable": false,
+          "metric_field": "",
+          "suffix": ""
+        },
+        "overlay": {
+          "bindings": {
+            "bindings": [],
+            "has_text": true,
+            "unbounded": "#66666620"
+          },
+          "field": "",
+          "height": {
+            "size": 5,
+            "unit": "%"
+          },
+          "position": "Top right",
+          "width": {
+            "size": 5,
+            "unit": "%"
+          }
+        },
+        "singleFill": true,
+        "slideshow": {
+          "duration": 3000,
+          "enable": true,
+          "pauseOnHover": true,
+          "transition": "Fade",
+          "transition_duration": 1000
+        },
+        "tooltip": false,
+        "tooltip_date_elapsed": false,
+        "tooltip_field": "",
+        "tooltip_include_date": false,
+        "tooltip_include_field": true,
+        "underline": {
+          "bindings": {
+            "bindings": [],
+            "has_text": true,
+            "unbounded": "#CCCCDCFF"
+          },
+          "bindings_field": "",
+          "field": "",
+          "text_align": "left",
+          "text_size": "14"
+        },
+        "width": "75"
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "gns-volcano-slideshow-v3",
+            "uid": "NAu661v4z"
+          },
+          "end_varname": "endtime2",
+          "imgrate_varname": "imagerate",
+          "refId": "A",
+          "start_varname": "starttime2",
+          "volID_varname": "volid2"
+        }
+      ],
+      "type": "dalvany-image-panel"
+    },
+    {
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 19
+      },
+      "id": 4,
+      "title": "Latest Image (All Volcanoes)",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "geonet-volcanocamera-datasource",
+        "uid": "LoQdKvWVz"
+      },
+      "gridPos": {
+        "h": 25,
+        "w": 24,
+        "x": 0,
+        "y": 20
+      },
+      "id": 6,
+      "options": {
+        "alt_field": "",
+        "height": "300",
+        "icon_field": "",
+        "open_url": {
+          "base_url": "",
+          "enable": true,
+          "metric_field": "imageName",
+          "suffix": ""
+        },
+        "overlay": {
+          "bindings": {
+            "bindings": [],
+            "has_text": true,
+            "unbounded": "#66666620"
+          },
+          "field": "",
+          "height": {
+            "size": 5,
+            "unit": "%"
+          },
+          "position": "Top right",
+          "width": {
+            "size": 5,
+            "unit": "%"
+          }
+        },
+        "singleFill": true,
+        "slideshow": {
+          "duration": 5000,
+          "enable": false,
+          "pauseOnHover": true,
+          "transition": "Slide",
+          "transition_duration": 1000
+        },
+        "tooltip": false,
+        "tooltip_date_elapsed": false,
+        "tooltip_field": "",
+        "tooltip_include_date": false,
+        "tooltip_include_field": true,
+        "underline": {
+          "bindings": {
+            "bindings": [],
+            "has_text": true,
+            "unbounded": "#CCCCDCFF"
+          },
+          "bindings_field": "",
+          "field": "",
+          "text_align": "left",
+          "text_size": "14"
+        },
+        "width": "450"
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "geonet-volcanocamera-datasource",
+            "uid": "LoQdKvWVz"
+          },
+          "image_number": "1",
+          "refId": "A",
+          "volId": "ruapehunorth"
+        },
+        {
+          "datasource": {
+            "type": "geonet-volcanocamera-datasource",
+            "uid": "LoQdKvWVz"
+          },
+          "hide": false,
+          "image_number": "1",
+          "refId": "B",
+          "volId": "ruapehusouth"
+        },
+        {
+          "datasource": {
+            "type": "geonet-volcanocamera-datasource",
+            "uid": "LoQdKvWVz"
+          },
+          "hide": false,
+          "image_number": "1",
+          "refId": "C",
+          "volId": "ruapehungauruhoe"
+        },
+        {
+          "datasource": {
+            "type": "geonet-volcanocamera-datasource",
+            "uid": "LoQdKvWVz"
+          },
+          "hide": false,
+          "image_number": "1",
+          "refId": "D",
+          "volId": "ngauruhoe"
+        },
+        {
+          "datasource": {
+            "type": "geonet-volcanocamera-datasource",
+            "uid": "LoQdKvWVz"
+          },
+          "hide": false,
+          "image_number": "1",
+          "refId": "E",
+          "volId": "taranaki"
+        },
+        {
+          "datasource": {
+            "type": "geonet-volcanocamera-datasource",
+            "uid": "LoQdKvWVz"
+          },
+          "hide": false,
+          "image_number": "1",
+          "refId": "F",
+          "volId": "raoulisland"
+        },
+        {
+          "datasource": {
+            "type": "geonet-volcanocamera-datasource",
+            "uid": "LoQdKvWVz"
+          },
+          "hide": false,
+          "image_number": "1",
+          "refId": "G",
+          "volId": "tongariro"
+        },
+        {
+          "datasource": {
+            "type": "geonet-volcanocamera-datasource",
+            "uid": "LoQdKvWVz"
+          },
+          "hide": false,
+          "image_number": "1",
+          "refId": "H",
+          "volId": "tongarirotemaaricrater"
+        },
+        {
+          "datasource": {
+            "type": "geonet-volcanocamera-datasource",
+            "uid": "LoQdKvWVz"
+          },
+          "hide": false,
+          "image_number": "1",
+          "refId": "I",
+          "volId": "whiteislandcraterrim"
+        },
+        {
+          "datasource": {
+            "type": "geonet-volcanocamera-datasource",
+            "uid": "LoQdKvWVz"
+          },
+          "hide": false,
+          "image_number": "1",
+          "refId": "J",
+          "volId": "whakatane"
+        }
+      ],
+      "transformations": [
+        {
+          "id": "merge",
+          "options": {}
+        }
+      ],
+      "type": "dalvany-image-panel"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 36,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "selected": false,
+          "text": "ruapehunorth",
+          "value": "ruapehunorth"
+        },
+        "hide": 0,
+        "includeAll": false,
+        "label": "Volcano ID 1",
+        "multi": false,
+        "name": "volcanoID",
+        "options": [
+          {
+            "selected": true,
+            "text": "ruapehunorth",
+            "value": "ruapehunorth"
+          },
+          {
+            "selected": false,
+            "text": "ruapehusouth",
+            "value": "ruapehusouth"
+          }
+        ],
+        "query": "ruapehunorth, ruapehusouth",
+        "queryValue": "",
+        "skipUrlSync": false,
+        "type": "custom"
+      },
+      {
+        "current": {
+          "selected": false,
+          "text": "30min",
+          "value": "30min"
+        },
+        "hide": 0,
+        "includeAll": false,
+        "label": "Image Rate",
+        "multi": false,
+        "name": "imagerate",
+        "options": [
+          {
+            "selected": false,
+            "text": "5min",
+            "value": "5min"
+          },
+          {
+            "selected": false,
+            "text": "10min",
+            "value": "10min"
+          },
+          {
+            "selected": true,
+            "text": "30min",
+            "value": "30min"
+          },
+          {
+            "selected": false,
+            "text": "1h",
+            "value": "1h"
+          }
+        ],
+        "query": "5min,10min,30min,1h",
+        "queryValue": "",
+        "skipUrlSync": false,
+        "type": "custom"
+      },
+      {
+        "current": {
+          "selected": false,
+          "text": "2022-11-25T08:00:00",
+          "value": "2022-11-25T08:00:00"
+        },
+        "hide": 0,
+        "label": "Start Time",
+        "name": "starttime",
+        "options": [
+          {
+            "selected": true,
+            "text": "2022-11-25T08:00:00",
+            "value": "2022-11-25T08:00:00"
+          }
+        ],
+        "query": "2022-11-25T08:00:00",
+        "skipUrlSync": false,
+        "type": "textbox"
+      },
+      {
+        "current": {
+          "selected": false,
+          "text": "2022-11-25T12:00:00",
+          "value": "2022-11-25T12:00:00"
+        },
+        "hide": 0,
+        "label": "End Time",
+        "name": "endtime",
+        "options": [
+          {
+            "selected": true,
+            "text": "2022-11-25T12:00:00",
+            "value": "2022-11-25T12:00:00"
+          }
+        ],
+        "query": "2022-11-25T12:00:00",
+        "skipUrlSync": false,
+        "type": "textbox"
+      },
+      {
+        "current": {
+          "selected": false,
+          "text": "ruapehusouth",
+          "value": "ruapehusouth"
+        },
+        "hide": 0,
+        "includeAll": false,
+        "label": "Volcano ID 2",
+        "multi": false,
+        "name": "volid2",
+        "options": [
+          {
+            "selected": false,
+            "text": "ruapehunorth",
+            "value": "ruapehunorth"
+          },
+          {
+            "selected": true,
+            "text": "ruapehusouth",
+            "value": "ruapehusouth"
+          }
+        ],
+        "query": "ruapehunorth, ruapehusouth",
+        "queryValue": "",
+        "skipUrlSync": false,
+        "type": "custom"
+      },
+      {
+        "current": {
+          "selected": false,
+          "text": "2022-11-25T08:00:00",
+          "value": "2022-11-25T08:00:00"
+        },
+        "hide": 0,
+        "label": "Start Time 2",
+        "name": "starttime2",
+        "options": [
+          {
+            "selected": true,
+            "text": "2022-11-25T08:00:00",
+            "value": "2022-11-25T08:00:00"
+          }
+        ],
+        "query": "2022-11-25T08:00:00",
+        "skipUrlSync": false,
+        "type": "textbox"
+      },
+      {
+        "current": {
+          "selected": false,
+          "text": "2022-11-25T12:00:00",
+          "value": "2022-11-25T12:00:00"
+        },
+        "hide": 0,
+        "label": "End Time 2",
+        "name": "endtime2",
+        "options": [
+          {
+            "selected": true,
+            "text": "2022-11-25T12:00:00",
+            "value": "2022-11-25T12:00:00"
+          }
+        ],
+        "query": "2022-11-25T12:00:00",
+        "skipUrlSync": false,
+        "type": "textbox"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Volcano Camera",
+  "uid": "33c9WZVVk",
+  "version": 60,
+  "weekStart": ""
+}

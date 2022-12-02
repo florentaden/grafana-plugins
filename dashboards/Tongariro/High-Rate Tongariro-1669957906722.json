@@ -1,0 +1,1059 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 12,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 37,
+      "panels": [],
+      "title": "Cameras",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "geonet-volcanocamera-datasource",
+        "uid": "LoQdKvWVz"
+      },
+      "gridPos": {
+        "h": 24,
+        "w": 21,
+        "x": 2,
+        "y": 1
+      },
+      "id": 5,
+      "options": {
+        "alt_field": "",
+        "height": "500",
+        "icon_field": "imageName",
+        "open_url": {
+          "base_url": "",
+          "enable": true,
+          "metric_field": "imageName",
+          "suffix": ""
+        },
+        "overlay": {
+          "bindings": {
+            "bindings": [],
+            "has_text": true,
+            "unbounded": "#66666620"
+          },
+          "field": "",
+          "height": {
+            "size": 5,
+            "unit": "%"
+          },
+          "position": "Top right",
+          "width": {
+            "size": 5,
+            "unit": "%"
+          }
+        },
+        "singleFill": true,
+        "slideshow": {
+          "duration": 5000,
+          "enable": false,
+          "pauseOnHover": true,
+          "transition": "Slide",
+          "transition_duration": 1000
+        },
+        "tooltip": false,
+        "tooltip_date_elapsed": false,
+        "tooltip_field": "",
+        "tooltip_include_date": false,
+        "tooltip_include_field": true,
+        "underline": {
+          "bindings": {
+            "bindings": [],
+            "has_text": true,
+            "unbounded": "#CCCCDCFF"
+          },
+          "bindings_field": "",
+          "field": "",
+          "text_align": "left",
+          "text_size": "14"
+        },
+        "width": "500"
+      },
+      "pluginVersion": "9.0.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "geonet-volcanocamera-datasource",
+            "uid": "LoQdKvWVz"
+          },
+          "image_number": "3",
+          "refId": "A",
+          "volId": "tongariro"
+        },
+        {
+          "datasource": {
+            "type": "geonet-volcanocamera-datasource",
+            "uid": "LoQdKvWVz"
+          },
+          "hide": false,
+          "image_number": "3",
+          "refId": "B",
+          "volId": "tongarirotemaaricrater"
+        }
+      ],
+      "transformations": [
+        {
+          "id": "merge",
+          "options": {}
+        }
+      ],
+      "type": "dalvany-image-panel"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 25
+      },
+      "id": 35,
+      "panels": [
+        {
+          "datasource": {
+            "type": "geonet-seismic-sensor",
+            "uid": "dzoN_rM4k"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 14,
+            "w": 12,
+            "x": 6,
+            "y": 2
+          },
+          "id": 24,
+          "options": {
+            "basemap": {
+              "config": {
+                "server": "topo"
+              },
+              "name": "Layer 0",
+              "type": "esri-xyz"
+            },
+            "controls": {
+              "mouseWheelZoom": true,
+              "showAttribution": true,
+              "showDebug": false,
+              "showScale": false,
+              "showZoom": true
+            },
+            "layers": [
+              {
+                "config": {
+                  "showLegend": false,
+                  "style": {
+                    "color": {
+                      "fixed": "red"
+                    },
+                    "opacity": 1,
+                    "rotation": {
+                      "fixed": 0,
+                      "max": 360,
+                      "min": -360,
+                      "mode": "mod"
+                    },
+                    "size": {
+                      "fixed": 10,
+                      "max": 15,
+                      "min": 2
+                    },
+                    "symbol": {
+                      "fixed": "img/icons/marker/triangle.svg",
+                      "mode": "fixed"
+                    },
+                    "text": {
+                      "field": "code",
+                      "fixed": "",
+                      "mode": "field"
+                    },
+                    "textConfig": {
+                      "fontSize": 15,
+                      "offsetX": 30,
+                      "offsetY": 0,
+                      "textAlign": "center",
+                      "textBaseline": "middle"
+                    }
+                  }
+                },
+                "location": {
+                  "mode": "auto"
+                },
+                "name": "Layer 1",
+                "tooltip": true,
+                "type": "markers"
+              }
+            ],
+            "view": {
+              "id": "coords",
+              "lat": -39.134952,
+              "lon": 175.654477,
+              "zoom": 11.92
+            }
+          },
+          "pluginVersion": "9.0.0",
+          "targets": [
+            {
+              "datasource": {
+                "type": "geonet-seismic-sensor",
+                "uid": "dzoN_rM4k"
+              },
+              "refId": "A",
+              "sensor": "broadband",
+              "stationid": "NTVZ"
+            },
+            {
+              "datasource": {
+                "type": "geonet-seismic-sensor",
+                "uid": "dzoN_rM4k"
+              },
+              "hide": false,
+              "refId": "B",
+              "sensor": "broadband",
+              "stationid": "TMVZ"
+            },
+            {
+              "datasource": {
+                "type": "geonet-seismic-sensor",
+                "uid": "dzoN_rM4k"
+              },
+              "hide": false,
+              "refId": "C",
+              "sensor": "broadband",
+              "stationid": "ETVZ"
+            },
+            {
+              "datasource": {
+                "type": "geonet-seismic-sensor",
+                "uid": "dzoN_rM4k"
+              },
+              "hide": false,
+              "refId": "D",
+              "sensor": "short",
+              "stationid": "WTVZ"
+            },
+            {
+              "datasource": {
+                "type": "geonet-seismic-sensor",
+                "uid": "dzoN_rM4k"
+              },
+              "hide": false,
+              "refId": "E",
+              "sensor": "short",
+              "stationid": "NOVZ"
+            }
+          ],
+          "transformations": [
+            {
+              "id": "merge",
+              "options": {}
+            }
+          ],
+          "type": "geomap"
+        }
+      ],
+      "title": "GeoNet Broad Band Stations",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 26
+      },
+      "id": 33,
+      "panels": [
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 11,
+            "w": 6,
+            "x": 0,
+            "y": 3
+          },
+          "id": 8,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "pluginVersion": "9.0.0",
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "ETVZ",
+              "type": "combined"
+            }
+          ],
+          "transformations": [
+            {
+              "id": "merge",
+              "options": {}
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 11,
+            "w": 6,
+            "x": 6,
+            "y": 3
+          },
+          "id": 38,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "pluginVersion": "9.0.0",
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "TMVZ",
+              "type": "combined"
+            }
+          ],
+          "transformations": [
+            {
+              "id": "merge",
+              "options": {}
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 11,
+            "w": 6,
+            "x": 12,
+            "y": 3
+          },
+          "id": 41,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "pluginVersion": "9.0.0",
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "NTVZ",
+              "type": "combined"
+            }
+          ],
+          "transformations": [
+            {
+              "id": "merge",
+              "options": {}
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 11,
+            "w": 6,
+            "x": 18,
+            "y": 3
+          },
+          "id": 44,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "pluginVersion": "9.0.0",
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "NOVZ",
+              "type": "combined"
+            }
+          ],
+          "transformations": [
+            {
+              "id": "merge",
+              "options": {}
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 11,
+            "w": 6,
+            "x": 0,
+            "y": 14
+          },
+          "id": 13,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "pluginVersion": "9.0.0",
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "ETVZ",
+              "type": "drum"
+            }
+          ],
+          "transformations": [
+            {
+              "id": "merge",
+              "options": {}
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 11,
+            "w": 6,
+            "x": 6,
+            "y": 14
+          },
+          "id": 39,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "pluginVersion": "9.0.0",
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "TMVZ",
+              "type": "drum"
+            }
+          ],
+          "transformations": [
+            {
+              "id": "merge",
+              "options": {}
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 11,
+            "w": 6,
+            "x": 12,
+            "y": 14
+          },
+          "id": 42,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "pluginVersion": "9.0.0",
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "NTVZ",
+              "type": "drum"
+            }
+          ],
+          "transformations": [
+            {
+              "id": "merge",
+              "options": {}
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 11,
+            "w": 6,
+            "x": 18,
+            "y": 14
+          },
+          "id": 45,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "pluginVersion": "9.0.0",
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "NOVZ",
+              "type": "drum"
+            }
+          ],
+          "transformations": [
+            {
+              "id": "merge",
+              "options": {}
+            }
+          ],
+          "type": "dalvany-image-panel"
+        }
+      ],
+      "title": "Seismic Data",
+      "type": "row"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 36,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-90d",
+    "to": "now"
+  },
+  "timepicker": {
+    "hidden": false,
+    "refresh_intervals": [
+      "5s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ],
+    "time_options": [
+      "5m",
+      "15m",
+      "1h",
+      "6h",
+      "12h",
+      "24h",
+      "2d",
+      "7d",
+      "30d"
+    ],
+    "type": "timepicker"
+  },
+  "timezone": "browser",
+  "title": "High-Rate Tongariro",
+  "uid": "ZFA7twI4k",
+  "version": 7,
+  "weekStart": ""
+}

@@ -36,3 +36,16 @@ datasources:
     access: direct
     uid: "GeqOekn4k"
     editable: true
+  - name: Static-Plots
+    type: gns-seismic-plots
+    access: direct
+    uid: "IB95RcZ4z"
+  - name: Seismic-Sensors
+    type: geonet-seismic-sensor
+    access: direct
+    uid: "dzoN_rM4k"
+  - name: Sigrun-Plots
+    type: sigrun-gnss
+    access: direct 
+    uid: "6O8eCYV4z"
+    
