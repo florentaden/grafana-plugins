@@ -5,9 +5,9 @@ HOST_PORT="3000"
 CONTAINER_PORT="3000"
 
 # -- localhost path
-DASHBOARDS_HOSTPATH="/home/faden/work/dashboard/dashboards"
-DATASOURCE_HOSTPATH="/home/faden/work/dashboard/plugins"
-PROVISION_HOSTPATH="/home/faden/work/dashboard/provisioning"
+DASHBOARDS_HOSTPATH="./dashboards"
+DATASOURCE_HOSTPATH="./plugins"
+PROVISION_HOSTPATH="./provisioning"
 
 # -- container path
 DASHBOARDS_CONTAINERPATH="/var/lib/grafana/dashboards"

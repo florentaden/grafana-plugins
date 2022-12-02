@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y sudo vim curl gnupg python make g++
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - && echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 RUN sudo apt-get update && sudo apt-get install yarn -y 
 
-# -- custom plugins 
+# -- custom plugins  
 COPY plugins /var/lib/grafana/plugins/
 COPY dashboards /var/lib/grafana/dashboards/
 COPY provisioning  /etc/grafana/provisioning/
@@ -37,12 +37,6 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | b
 	&& nvm alias default $NODE_VERSION \
 	&& nvm use default \
 	&& bash install_plugins.sh
-#       && cd /var/lib/grafana/plugins/volcano-camera \
-#	&& yarn install \
-#	&& yarn dev \
-#	&& cd /var/lib/grafana/plugins/volcano-alert-level \
-#	&& yarn install \
-#	&& yarn dev
 
 # -- install image panel and HTML plugins
 WORKDIR /var/lib/grafana/plugins
