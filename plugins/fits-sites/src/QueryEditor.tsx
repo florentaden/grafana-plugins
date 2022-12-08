@@ -22,14 +22,7 @@ export class QueryEditor extends PureComponent<Props> {
 
     return (
       <div className="gf-form">
-        <FormField
-          width={4}
-          value={siteid}
-          onChange={this.onSiteChange}
-          label="Site"
-          type="string"
-          tooltip="RU001"
-        />
+        <FormField width={4} value={siteid} onChange={this.onSiteChange} label="Site" type="string" tooltip="RU001" />
       </div>
     );
   }

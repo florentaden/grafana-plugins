@@ -1,33 +1,22 @@
 
-NAME="vdb-testing"
-VER="0.1"
+NAME="volcano-dashboard"
 HOST_PORT="3000"
 CONTAINER_PORT="3000"
 
-# -- localhost path
-DASHBOARDS_HOSTPATH="./dashboards"
-DATASOURCE_HOSTPATH="./plugins"
-PROVISION_HOSTPATH="./provisioning"
-
-# -- container path
-DASHBOARDS_CONTAINERPATH="/var/lib/grafana/dashboards"
-DATASOURCE_CONTAINERPATH="/var/lib/grafana/plugins"
-PROVISION_CONTAINERPATH="/etc/grafana/provisioning"
-
 # -- Build docker container
-docker build -t $NAME:$VER . &&
+docker build -t $NAME . &&
 
-# -- Run docker container 
+# -- Run docker container
 docker run -d \
  -p $HOST_PORT:$CONTAINER_PORT \
  -e GF_DEFAULT_APP_MODE='development' \
- $NAME:$VER
+ $NAME
 
 # -- Find Grafana
-CONTAINER=`docker ps | grep $NAME:$VER | awk '{print $1}'`
+CONTAINER=`docker ps | grep $NAME | awk '{print $1}'`
 PORT=`docker inspect $CONTAINER | grep HostPort | tail -1 | awk -F\" '{print $4}'`
 
-echo grafana_dev:$VER up and running $CONTAINER
+echo grafana_dev up and running $CONTAINER
 echo Try
 echo http://`hostname`:$PORT
-docker exec -it $CONTAINER /bin/bash 
+docker exec -it $CONTAINER /bin/bash

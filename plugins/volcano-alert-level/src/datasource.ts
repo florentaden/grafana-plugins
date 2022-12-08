@@ -73,7 +73,7 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
 
         response.forEach((point: any) => {
           if ( point.properties.volcanoID === query.volcanoID ) {
-            var alert_color: string;
+            let alert_color: string;
             if ( point.properties.level === 0 ) {
               alert_color = "#E7DEEC";
             } else if ( point.properties.level === 1 ) {

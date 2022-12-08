@@ -1,44 +1,57 @@
+ARG BUILDER_IMAGE=grafana/grafana:9.0.0-ubuntu
+ARG RUNNER_IMAGE=grafana/grafana:9.0.0-ubuntu
+ARG RUN_USER=nobody
 
-from grafana/grafana:9.0.0-ubuntu
+# -- builder: compile plugins
 
+FROM ${BUILDER_IMAGE} as builder
 USER root
 
-# -- replace shell with bash so we can source files
-RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+# -- install basics
+RUN apt-get update && apt-get install -y sudo vim curl gnupg python make g++ jq
+ENV NODE_VERSION 16.10.0
+ENV NPM_CACHE_FOLDER=/root/.cache/npm
 
-# -- install basics 
-RUN apt-get update && apt-get install -y sudo vim curl gnupg python make g++
+SHELL ["/bin/bash", "--login", "-i", "-c"]
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+RUN source ~/.nvm/nvm.sh
+RUN nvm install $NODE_VERSION
+RUN nvm alias default $NODE_VERSION
+RUN nvm use default
 
-# -- install yarn 
+# -- install yarn
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - && echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-RUN sudo apt-get update && sudo apt-get install yarn -y 
+RUN sudo apt-get update && sudo apt-get install yarn -y
+RUN npm install -g package-json-merge
 
-# -- custom plugins  
+# -- compile plugins
 COPY plugins /var/lib/grafana/plugins/
+COPY build_plugins.sh /var/lib/grafana
+WORKDIR /var/lib/grafana
+RUN ./build_plugins.sh
+# -- plugins' distribution artifacts in /var/lib/grafana/dist/
+
+# -- end of builder
+
+# -- now build runtime container image
+
+FROM ${RUNNER_IMAGE}
+USER root
+
+SHELL ["/bin/bash", "--login", "-i", "-c"]
+
+# -- install basics
+RUN apt-get update && apt-get install -y sudo curl gnupg python
+
+# -- custom plugins from builder
+COPY --from=builder /var/lib/grafana/plugins/dist /var/lib/grafana/plugins/
+
+# -- other configs
 COPY dashboards /var/lib/grafana/dashboards/
 COPY provisioning  /etc/grafana/provisioning/
 COPY grafana.ini /etc/grafana/
-COPY install_plugins.sh /var/lib/grafana/
-
-# -- create admin user
-RUN useradd -rm -d /home/admin -s /bin/bash -g root -G sudo -u 1001 admin ; passwd -d admin
-RUN chown -R admin /etc/grafana && chmod -R 777 /etc/grafana
-RUN chown -R admin /var/lib/grafana && chmod -R 777 /var/lib/grafana
-
-# -- install node 
-WORKDIR /var/lib/grafana
-USER admin
-ENV NVM_DIR /home/admin/.nvm
-ENV NODE_VERSION 16.10.0
-
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash \
-	&& source $NVM_DIR/nvm.sh \
-	&& nvm install $NODE_VERSION \
-	&& nvm alias default $NODE_VERSION \
-	&& nvm use default \
-	&& bash install_plugins.sh
 
 # -- install image panel and HTML plugins
 WORKDIR /var/lib/grafana/plugins
-RUN grafana-cli plugins install dalvany-image-panel 
+RUN grafana-cli plugins install dalvany-image-panel
 RUN grafana-cli plugins install aidanmountford-html-panel

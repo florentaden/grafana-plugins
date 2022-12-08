@@ -1,1 +1,3 @@
 grafana-vumt
+**/node_modules/
+**/dist/

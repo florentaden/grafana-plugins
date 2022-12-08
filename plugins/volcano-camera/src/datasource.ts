@@ -63,13 +63,13 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
       const step = 600;
       console.log(diff, step);
 
-      var time_range = [];
+      let time_range = [];
       for (let t = alignedFrom; t < alignedTo; t += step){
         time_range.push(t)
       }
 
-      var i_init: number;
-      var image_number: number;
+      let i_init: number;
+      let image_number: number;
       image_number = Number(query.image_number);
 
       if ( image_number < 1) {
@@ -78,8 +78,8 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
         i_init = time_range.length - image_number;
       }
 
-      for ( var i = i_init; i < time_range.length; i++){
-        var t = time_range[i];
+      for ( let i = i_init; i < time_range.length; i++){
+        let t = time_range[i];
         let tm = dateTime(t * 1000);
         let nm = base + tm.format('YYYYMMDDHHmmSS') + 'NZDT.jpg';
         frame.appendRow([nm]);

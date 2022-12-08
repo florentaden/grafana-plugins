@@ -54,7 +54,7 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
     // startDate.setTime(to - dateOffset);
     // const fromS = startDate.toISOString();
     
-    var target_url: string;
+    let target_url: string;
 
     // bbox 
     target_url = QuakeSearchAPI + "bbox=" + query.bbox;
@@ -106,7 +106,7 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
         });
 
         // trick to get the cumulative count (go backward as earthquakes not sorted)
-        var count = response.length + 1
+        let count = response.length + 1
 
         response.forEach((point: any) => {
           count = count - 1

@@ -30,7 +30,6 @@ interface SiteFeature {
   };
 }
 
-
 export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
   constructor(instanceSettings: DataSourceInstanceSettings<MyDataSourceOptions>) {
     super(instanceSettings);
@@ -66,10 +65,7 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
 
     const response = await getBackendSrv().datasourceRequest({
       method: 'GET',
-      url:
-        fitsSiteApi +
-        '&siteID=' +
-        query.siteid 
+      url: fitsSiteApi + '&siteID=' + query.siteid,
     });
 
     // console.log(response.data as unknown as string);
@@ -89,19 +85,21 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
           fields: [
             { name: 'siteiD', type: FieldType.string },
             { name: 'height', type: FieldType.number },
-            { name: 'groundRelationship', type: FieldType.number},
+            { name: 'groundRelationship', type: FieldType.number },
             { name: 'name', type: FieldType.string },
             { name: 'longitude', type: FieldType.number },
-            { name: 'latitude', type: FieldType.number},
+            { name: 'latitude', type: FieldType.number },
           ],
         });
         response.forEach((point: any) => {
-          frame.appendRow([point.properties.siteID, 
-                          point.properties.height, 
-                          point.properties.groundRelationship,
-                          point.properties.name,
-                          point.geometry.coordinates[0],
-                          point.geometry.coordinates[1]]);
+          frame.appendRow([
+            point.properties.siteID,
+            point.properties.height,
+            point.properties.groundRelationship,
+            point.properties.name,
+            point.geometry.coordinates[0],
+            point.geometry.coordinates[1],
+          ]);
         });
 
         return frame;
