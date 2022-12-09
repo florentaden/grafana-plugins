@@ -26,23 +26,9 @@ export class QueryEditor extends PureComponent<Props> {
 
     return (
       <div className="gf-form">
-        <FormField
-          width={4}
-          value={type}
-          onChange={this.onTypeChange}
-          label="Type"
-          type="string"
-        />
-        <FormField
-          width={4}
-          value={site}
-          onChange={this.onSiteChange}
-          label="Site Code"
-          type="string"
-        />
-        
+        <FormField width={4} value={type} onChange={this.onTypeChange} label="Type" type="string" />
+        <FormField width={4} value={site} onChange={this.onSiteChange} label="Site Code" type="string" />
       </div>
     );
   }
 }
-

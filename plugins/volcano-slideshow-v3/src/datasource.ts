@@ -66,11 +66,11 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
       const fromS = fromDT_.format('YYYY-MM-DD');
       /////////////////////////////////////////////////
 
-      var VolcanoID: string;
-      var img_rate: string;
-      var time_step: number;
-      var starttimeS: string;
-      var endtimeS: string;
+      let VolcanoID: string;
+      let img_rate: string;
+      let time_step: number;
+      let starttimeS: string;
+      let endtimeS: string;
     
       // -- get variables of the dashboard
       const variables = getTemplateSrv().getVariables() as ExtendedVariableModel[];
