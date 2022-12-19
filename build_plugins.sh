@@ -30,7 +30,7 @@ for f in * ; do
         ln -s ../node_modules . # symboli link parent dir's node_modules here
         yarn dev  # TODO: Fix lint errors after switched to `yarn build`
         if [ -d "./dist/" ]; then
-          id=`cat package.json | jq -r .name`
+          id=`cat src/plugin.json | jq -r .id`
           echo $id
           rm -rf $id
           if [ ! -d ../dist ]; then mkdir ../dist; fi

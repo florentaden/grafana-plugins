@@ -1,5 +1,5 @@
-ARG BUILDER_IMAGE=grafana/grafana:9.0.0-ubuntu
-ARG RUNNER_IMAGE=grafana/grafana:9.0.0-ubuntu
+ARG BUILDER_IMAGE=grafana/grafana:9.3.1-ubuntu
+ARG RUNNER_IMAGE=grafana/grafana-oss:9.3.1
 ARG RUN_USER=nobody
 
 # -- builder: compile plugins
@@ -41,7 +41,7 @@ USER root
 SHELL ["/bin/bash", "--login", "-i", "-c"]
 
 # -- install basics
-RUN apt-get update && apt-get install -y sudo curl gnupg python
+RUN apk add --update ca-certificates tzdata curl
 
 # -- custom plugins from builder
 COPY --from=builder /var/lib/grafana/plugins/dist /var/lib/grafana/plugins/
