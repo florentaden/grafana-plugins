@@ -28,7 +28,7 @@ for f in * ; do
       	cd $f
         rm -rf ./dist # tidy up leftovers from developer's local directory
         ln -s ../node_modules . # symboli link parent dir's node_modules here
-        yarn dev  # TODO: Fix lint errors after switched to `yarn build`
+        yarn build
         if [ -d "./dist/" ]; then
           id=`cat src/plugin.json | jq -r .id`
           echo $id
