@@ -46,7 +46,7 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
       const suffix = plotNameMap[query.type]; // get suffix or last part of name
 
       const station_array = query.site.split(',');
-      var station_name: string;
+      let station_name: string;
 
       station_array.forEach((station: string) => {
         if (query.type === 'sigrun' || query.type === 'rsam') {

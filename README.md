@@ -14,11 +14,8 @@ docker build -t volcano-dashboard .
 ```
 The complete running environment requires another service to expose data store in GNS shared drive via http.
 
-**Note 1:** 
+**Note:** 
 If you've made changes to the plugin, specifying `--no-cache` option to force rebuild all plugins while rebuilding the container.
-
-**Note 2:** 
-To prevent from copying large amount of unnecessary node modules from your local directory (because we'll do in the build container), empty `node_modules` and `dist` directory in each plugin's directory before building the container.
 
 ### Different admin password
 
@@ -86,6 +83,4 @@ Change it to your {localhost}:{port} to make the plugin work.
 
 ## TODO
 
-1. Currently plugins built in dev mode only. There're some linting issue stop building to production mode.
-
-2. Currently plugin `sigrun-gnss` uses hard-coded URL to the datasource host. A way to configure it with environment variable would be ideal. However, can't find a way to support this in Grafana.
+1. Currently plugin `sigrun-gnss` uses hard-coded URL to the datasource host. A way to configure it with environment variable would be ideal. However, can't find a way to support this in Grafana.

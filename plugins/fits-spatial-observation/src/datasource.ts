@@ -22,8 +22,8 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
   }
 
   async doRequest(query: MyQuery, from: number, to: number) {
-    var days_float: number;
-    var days: number;
+    let days_float: number;
+    let days: number;
     
     days_float = (to - from) / 3600 / 24 / 1000;
     if (days_float < 1) {
@@ -58,8 +58,8 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
     // Return a constant for each query.
     const promises = options.targets.map((query) =>
       this.doRequest(query, from, to).then((response) => {
-        var resp_split = response.split("\n");
-        var headers = resp_split[0].split(",");
+        let resp_split = response.split("\n");
+        let headers = resp_split[0].split(",");
 
         const frame = new MutableDataFrame({
           refId: query.refId,
@@ -72,11 +72,11 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
         });
         resp_split.forEach((line: any, index: number) => {
           if (index > 0) {
-            var point = line.split(",");
+            let point = line.split(",");
 
-            var t: Date;
-            var value: number;
-            var error: number;
+            let t: Date;
+            let value: number;
+            let error: number;
 
             t = point[0];
             value = point[1];
