@@ -1,6 +1,6 @@
 
 NAME="volcano-dashboard"
-HOST_PORT="3000"
+HOST_PORT="3001"
 CONTAINER_PORT="3000"
 
 # -- Build docker container

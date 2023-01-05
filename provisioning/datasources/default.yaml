@@ -48,4 +48,16 @@ datasources:
     type: sigrun-gnss
     access: direct 
     uid: "6O8eCYV4z"
+  - name: Fits-Sites
+    type: gns-fits-sites
+    access: direct
+    uid: "pr0pVazVz"
+  - name: Fits-Obs
+    type: gns-fits-observation
+    access: direct
+    uid: "YtT7OakVz"
+  - name: QuakeSearch
+    type: gns-quakesearch
+    access: direct
+    uid: "jig3QXZ4z"
     
