@@ -52,7 +52,7 @@ datasources:
     type: gns-fits-sites
     access: direct
     uid: "pr0pVazVz"
-  - name: Fits-Obs
+  - name: FITS-Obs
     type: gns-fits-observation
     access: direct
     uid: "YtT7OakVz"
@@ -60,4 +60,9 @@ datasources:
     type: gns-quakesearch
     access: direct
     uid: "jig3QXZ4z"
+  - name: FITS-Spatial-Obs
+    type: gns-fits-spatial-observation
+    access: direct
+    uid: "l7pAbYkVk"
+
     
