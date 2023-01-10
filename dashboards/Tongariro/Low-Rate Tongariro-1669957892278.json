@@ -24,104 +24,17 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 16,
+  "id": 5,
   "links": [],
   "liveNow": false,
   "panels": [
-    {
-      "datasource": {
-        "type": "sigrun-gnss",
-        "uid": "6O8eCYV4z"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 0,
-        "y": 0
-      },
-      "id": 74,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom"
-        },
-        "tooltip": {
-          "mode": "single",
-          "sort": "none"
-        }
-      },
-      "targets": [
-        {
-          "datasource": {
-            "type": "sigrun-gnss",
-            "uid": "6O8eCYV4z"
-          },
-          "period": "8h",
-          "refId": "A",
-          "siteID": "PUKE"
-        }
-      ],
-      "title": "Panel Title",
-      "type": "timeseries"
-    },
     {
       "collapsed": false,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 8
+        "y": 0
       },
       "id": 67,
       "panels": [],
@@ -162,7 +75,7 @@
         "h": 13,
         "w": 6,
         "x": 0,
-        "y": 9
+        "y": 1
       },
       "id": 60,
       "options": {
@@ -177,6 +90,7 @@
           "mouseWheelZoom": true,
           "showAttribution": true,
           "showDebug": true,
+          "showMeasure": false,
           "showScale": true,
           "showZoom": true
         },
@@ -228,14 +142,18 @@
             "type": "markers"
           }
         ],
+        "tooltip": {
+          "mode": "details"
+        },
         "view": {
+          "allLayers": true,
           "id": "coords",
           "lat": -39.12768,
           "lon": 175.643727,
           "zoom": 10.85
         }
       },
-      "pluginVersion": "9.0.0",
+      "pluginVersion": "9.3.1",
       "targets": [
         {
           "datasource": {
@@ -303,980 +221,625 @@
     },
     {
       "datasource": {
-        "type": "gns-seismic-plots",
-        "uid": "IB95RcZ4z"
+        "type": "sigrun-gnss",
+        "uid": "6O8eCYV4z"
       },
-      "gridPos": {
-        "h": 13,
-        "w": 6,
-        "x": 6,
-        "y": 9
-      },
-      "id": 72,
-      "options": {
-        "alt_field": "",
-        "height": "75",
-        "icon_field": "",
-        "open_url": {
-          "base_url": "",
-          "enable": false,
-          "metric_field": "",
-          "suffix": ""
-        },
-        "overlay": {
-          "bindings": {
-            "bindings": [],
-            "has_text": true,
-            "unbounded": "#66666620"
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
           },
-          "field": "",
-          "height": {
-            "size": 5,
-            "unit": "%"
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "North (mm)",
+            "axisPlacement": "left",
+            "axisSoftMax": 25,
+            "axisSoftMin": -25,
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 1,
+            "pointSize": 6,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
           },
-          "position": "Top right",
-          "width": {
-            "size": 5,
-            "unit": "%"
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
           }
         },
-        "singleFill": true,
-        "slideshow": {
-          "duration": 5000,
-          "enable": false,
-          "pauseOnHover": true,
-          "transition": "Slide",
-          "transition_duration": 1000
-        },
-        "tooltip": false,
-        "tooltip_date_elapsed": false,
-        "tooltip_field": "",
-        "tooltip_include_date": false,
-        "tooltip_include_field": true,
-        "underline": {
-          "bindings": {
-            "bindings": [],
-            "has_text": true,
-            "unbounded": "#CCCCDCFF"
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "north"
+            },
+            "properties": [
+              {
+                "id": "custom.showPoints",
+                "value": "always"
+              },
+              {
+                "id": "custom.lineWidth",
+                "value": 0
+              },
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "dark-blue",
+                  "mode": "fixed"
+                }
+              }
+            ]
           },
-          "bindings_field": "",
-          "field": "",
-          "text_align": "left",
-          "text_size": "14"
-        },
-        "width": "75"
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "north_min"
+            },
+            "properties": [
+              {
+                "id": "custom.lineWidth",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "north_max"
+            },
+            "properties": [
+              {
+                "id": "custom.fillBelowTo",
+                "value": "north_min"
+              },
+              {
+                "id": "custom.lineWidth",
+                "value": 0
+              },
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "text",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
       },
-      "pluginVersion": "9.0.0",
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 6,
+        "y": 1
+      },
+      "id": 74,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "asc"
+        }
+      },
       "targets": [
         {
           "datasource": {
-            "type": "gns-seismic-plots",
-            "uid": "IB95RcZ4z"
+            "type": "sigrun-gnss",
+            "uid": "6O8eCYV4z"
           },
-          "refId": "VGFW",
-          "site": "VGOT",
-          "type": "sigrun"
+          "period": "8h",
+          "refId": "A",
+          "siteID": "VGOT"
         }
       ],
-      "type": "dalvany-image-panel"
+      "title": "VGOT",
+      "transformations": [
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "east": true,
+              "err_east": true,
+              "err_vertical": true,
+              "vertical": true
+            },
+            "indexByName": {},
+            "renameByName": {}
+          }
+        },
+        {
+          "id": "calculateField",
+          "options": {
+            "alias": "north_max",
+            "binary": {
+              "left": "north",
+              "reducer": "sum",
+              "right": "err_north"
+            },
+            "mode": "binary",
+            "reduce": {
+              "reducer": "sum"
+            }
+          }
+        },
+        {
+          "id": "calculateField",
+          "options": {
+            "alias": "north_min",
+            "binary": {
+              "left": "north",
+              "operator": "-",
+              "reducer": "sum",
+              "right": "err_north"
+            },
+            "mode": "binary",
+            "reduce": {
+              "reducer": "sum"
+            }
+          }
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "err_north": true
+            },
+            "indexByName": {},
+            "renameByName": {}
+          }
+        }
+      ],
+      "type": "timeseries"
     },
     {
-      "collapsed": true,
-      "gridPos": {
-        "h": 1,
-        "w": 24,
-        "x": 0,
-        "y": 22
+      "datasource": {
+        "type": "sigrun-gnss",
+        "uid": "6O8eCYV4z"
       },
-      "id": 69,
-      "panels": [
-        {
-          "datasource": {
-            "type": "gns-fits-observation",
-            "uid": "YtT7OakVz"
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
           },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "drawStyle": "line",
-                "fillOpacity": 0,
-                "gradientMode": "none",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "lineInterpolation": "linear",
-                "lineWidth": 1,
-                "pointSize": 5,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "auto",
-                "spanNulls": false,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green"
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              }
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "East (mm)",
+            "axisPlacement": "left",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
             },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 8,
-            "w": 12,
-            "x": 0,
-            "y": 28
-          },
-          "id": 26,
-          "options": {
-            "legend": {
-              "calcs": [],
-              "displayMode": "list",
-              "placement": "bottom"
+            "lineInterpolation": "linear",
+            "lineStyle": {
+              "fill": "solid"
             },
-            "tooltip": {
-              "mode": "single",
-              "sort": "none"
+            "lineWidth": 1,
+            "pointSize": 6,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
             }
           },
-          "targets": [
-            {
-              "datasource": {
-                "type": "gns-fits-observation",
-                "uid": "YtT7OakVz"
-              },
-              "hide": false,
-              "refId": "RU004-t",
-              "site": "RU004",
-              "type": "t"
-            },
-            {
-              "datasource": {
-                "type": "gns-fits-observation",
-                "uid": "YtT7OakVz"
-              },
-              "hide": false,
-              "refId": "RU001-t",
-              "site": "RU001",
-              "type": "t"
-            }
-          ],
-          "title": "Lake Temperature",
-          "transformations": [
-            {
-              "id": "sortBy",
-              "options": {
-                "fields": {},
-                "sort": [
-                  {
-                    "desc": false,
-                    "field": "date-time"
-                  }
-                ]
-              }
-            }
-          ],
-          "type": "timeseries"
-        },
-        {
-          "datasource": {
-            "type": "gns-fits-observation",
-            "uid": "YtT7OakVz"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "drawStyle": "line",
-                "fillOpacity": 0,
-                "gradientMode": "none",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "lineInterpolation": "linear",
-                "lineWidth": 1,
-                "pointSize": 5,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "auto",
-                "spanNulls": false,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green"
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              }
-            },
-            "overrides": [
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
               {
-                "__systemRef": "hideSeriesFrom",
-                "matcher": {
-                  "id": "byNames",
-                  "options": {
-                    "mode": "exclude",
-                    "names": [
-                      " z (m)"
-                    ],
-                    "prefix": "All except:",
-                    "readOnly": true
-                  }
-                },
-                "properties": [
-                  {
-                    "id": "custom.hideFrom",
-                    "value": {
-                      "legend": false,
-                      "tooltip": false,
-                      "viz": true
-                    }
-                  }
-                ]
+                "color": "green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "east"
+            },
+            "properties": [
+              {
+                "id": "custom.showPoints",
+                "value": "always"
+              },
+              {
+                "id": "custom.lineWidth",
+                "value": 0
+              },
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "green",
+                  "mode": "fixed"
+                }
               }
             ]
           },
-          "gridPos": {
-            "h": 8,
-            "w": 12,
-            "x": 12,
-            "y": 28
-          },
-          "id": 38,
-          "options": {
-            "legend": {
-              "calcs": [],
-              "displayMode": "list",
-              "placement": "bottom"
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "east_min"
             },
-            "tooltip": {
-              "mode": "single",
-              "sort": "none"
-            }
-          },
-          "targets": [
-            {
-              "datasource": {
-                "type": "gns-fits-observation",
-                "uid": "YtT7OakVz"
-              },
-              "hide": false,
-              "refId": "RU004-t",
-              "site": "RU001A",
-              "type": "z"
-            }
-          ],
-          "title": "Lake Height",
-          "transformations": [
-            {
-              "id": "sortBy",
-              "options": {
-                "fields": {},
-                "sort": [
-                  {
-                    "desc": false,
-                    "field": "date-time"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "organize",
-              "options": {
-                "excludeByName": {
-                  " error (m)": true,
-                  " z (m)": false
-                },
-                "indexByName": {},
-                "renameByName": {
-                  " z (m)": ""
-                }
-              }
-            }
-          ],
-          "type": "timeseries"
-        },
-        {
-          "datasource": {
-            "type": "gns-fits-observation",
-            "uid": "YtT7OakVz"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "drawStyle": "line",
-                "fillOpacity": 0,
-                "gradientMode": "none",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "lineInterpolation": "linear",
-                "lineWidth": 1,
-                "pointSize": 5,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "auto",
-                "spanNulls": false,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green"
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              },
-              "unit": "celsius"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 5,
-            "w": 24,
-            "x": 0,
-            "y": 36
-          },
-          "id": 35,
-          "options": {
-            "legend": {
-              "calcs": [],
-              "displayMode": "list",
-              "placement": "bottom"
-            },
-            "tooltip": {
-              "mode": "single",
-              "sort": "none"
-            }
-          },
-          "targets": [
-            {
-              "datasource": {
-                "type": "gns-fits-observation",
-                "uid": "YtT7OakVz"
-              },
-              "hide": false,
-              "refId": "RU001-t",
-              "site": "RU001",
-              "type": "t"
-            }
-          ],
-          "transformations": [
-            {
-              "id": "sortBy",
-              "options": {
-                "fields": {},
-                "sort": [
-                  {
-                    "desc": false,
-                    "field": "date-time"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "organize",
-              "options": {
-                "excludeByName": {
-                  " error (C)": true
-                },
-                "indexByName": {},
-                "renameByName": {}
-              }
-            }
-          ],
-          "type": "timeseries"
-        },
-        {
-          "datasource": {
-            "type": "gns-fits-observation",
-            "uid": "YtT7OakVz"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "drawStyle": "line",
-                "fillOpacity": 0,
-                "gradientMode": "none",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "lineInterpolation": "linear",
-                "lineWidth": 1,
-                "pointSize": 5,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "auto",
-                "spanNulls": false,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green"
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              },
-              "unit": "none"
-            },
-            "overrides": [
+            "properties": [
               {
-                "matcher": {
-                  "id": "byName",
-                  "options": " Cl-w (mg/L)"
-                },
-                "properties": [
-                  {
-                    "id": "custom.axisPlacement",
-                    "value": "right"
-                  }
-                ]
+                "id": "custom.lineWidth",
+                "value": 0
               }
             ]
           },
-          "gridPos": {
-            "h": 6,
-            "w": 24,
-            "x": 0,
-            "y": 41
-          },
-          "id": 40,
-          "options": {
-            "legend": {
-              "calcs": [],
-              "displayMode": "list",
-              "placement": "bottom"
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "east_max"
             },
-            "tooltip": {
-              "mode": "single",
-              "sort": "none"
-            }
-          },
-          "targets": [
-            {
-              "datasource": {
-                "type": "gns-fits-observation",
-                "uid": "YtT7OakVz"
-              },
-              "hide": false,
-              "refId": "RU001-Mg",
-              "site": "RU001",
-              "type": "Mg-w"
-            },
-            {
-              "datasource": {
-                "type": "gns-fits-observation",
-                "uid": "YtT7OakVz"
-              },
-              "hide": false,
-              "refId": "RU003-Mg",
-              "site": "RU003",
-              "type": "Mg-w"
-            },
-            {
-              "datasource": {
-                "type": "gns-fits-observation",
-                "uid": "YtT7OakVz"
-              },
-              "hide": false,
-              "refId": "RU004-Mg",
-              "site": "RU004",
-              "type": "Mg-w"
-            },
-            {
-              "datasource": {
-                "type": "gns-fits-observation",
-                "uid": "YtT7OakVz"
-              },
-              "hide": false,
-              "refId": "RU001-Cl",
-              "site": "RU001",
-              "type": "Cl-w"
-            },
-            {
-              "datasource": {
-                "type": "gns-fits-observation",
-                "uid": "YtT7OakVz"
-              },
-              "hide": false,
-              "refId": "RU003-Cl",
-              "site": "RU003",
-              "type": "Cl-w"
-            },
-            {
-              "datasource": {
-                "type": "gns-fits-observation",
-                "uid": "YtT7OakVz"
-              },
-              "hide": false,
-              "refId": "RU004-Cl",
-              "site": "RU004",
-              "type": "Cl-w"
-            }
-          ],
-          "transformations": [
-            {
-              "id": "merge",
-              "options": {}
-            },
-            {
-              "id": "sortBy",
-              "options": {
-                "fields": {},
-                "sort": [
-                  {
-                    "desc": false,
-                    "field": "date-time"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "organize",
-              "options": {
-                "excludeByName": {
-                  " error (C)": true,
-                  " error (mg/L)": true
-                },
-                "indexByName": {},
-                "renameByName": {}
-              }
-            }
-          ],
-          "type": "timeseries"
-        },
-        {
-          "datasource": {
-            "type": "gns-fits-observation",
-            "uid": "YtT7OakVz"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "drawStyle": "line",
-                "fillOpacity": 0,
-                "gradientMode": "none",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "lineInterpolation": "linear",
-                "lineWidth": 1,
-                "pointSize": 5,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "auto",
-                "spanNulls": false,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green"
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              },
-              "unit": "none"
-            },
-            "overrides": [
+            "properties": [
               {
-                "matcher": {
-                  "id": "byName",
-                  "options": " Cl-w (mg/L)"
-                },
-                "properties": [
-                  {
-                    "id": "custom.axisPlacement",
-                    "value": "right"
-                  }
-                ]
+                "id": "custom.fillBelowTo",
+                "value": "east_min"
+              },
+              {
+                "id": "custom.lineWidth",
+                "value": 0
+              },
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "text",
+                  "mode": "fixed"
+                }
               }
             ]
-          },
-          "gridPos": {
-            "h": 6,
-            "w": 24,
-            "x": 0,
-            "y": 47
-          },
-          "id": 41,
-          "options": {
-            "legend": {
-              "calcs": [],
-              "displayMode": "list",
-              "placement": "bottom"
-            },
-            "tooltip": {
-              "mode": "single",
-              "sort": "none"
-            }
-          },
-          "targets": [
-            {
-              "datasource": {
-                "type": "gns-fits-observation",
-                "uid": "YtT7OakVz"
-              },
-              "hide": false,
-              "refId": "RU001-Mg",
-              "site": "RU001",
-              "type": "SO4-w"
-            },
-            {
-              "datasource": {
-                "type": "gns-fits-observation",
-                "uid": "YtT7OakVz"
-              },
-              "hide": false,
-              "refId": "RU003-Mg",
-              "site": "RU003",
-              "type": "SO4-w"
-            },
-            {
-              "datasource": {
-                "type": "gns-fits-observation",
-                "uid": "YtT7OakVz"
-              },
-              "hide": false,
-              "refId": "RU004-Mg",
-              "site": "RU004",
-              "type": "SO4-w"
-            },
-            {
-              "datasource": {
-                "type": "gns-fits-observation",
-                "uid": "YtT7OakVz"
-              },
-              "hide": false,
-              "refId": "RU001-Cl",
-              "site": "RU001",
-              "type": "Cl-w"
-            },
-            {
-              "datasource": {
-                "type": "gns-fits-observation",
-                "uid": "YtT7OakVz"
-              },
-              "hide": false,
-              "refId": "RU003-Cl",
-              "site": "RU003",
-              "type": "Cl-w"
-            },
-            {
-              "datasource": {
-                "type": "gns-fits-observation",
-                "uid": "YtT7OakVz"
-              },
-              "hide": false,
-              "refId": "RU004-Cl",
-              "site": "RU004",
-              "type": "Cl-w"
-            }
-          ],
-          "transformations": [
-            {
-              "id": "merge",
-              "options": {}
-            },
-            {
-              "id": "sortBy",
-              "options": {
-                "fields": {},
-                "sort": [
-                  {
-                    "desc": false,
-                    "field": "date-time"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "organize",
-              "options": {
-                "excludeByName": {
-                  " error (C)": true,
-                  " error (mg/L)": true
-                },
-                "indexByName": {},
-                "renameByName": {}
-              }
-            }
-          ],
-          "type": "timeseries"
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 6,
+        "y": 7
+      },
+      "id": 76,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
+        "tooltip": {
+          "mode": "single",
+          "sort": "asc"
+        }
+      },
+      "targets": [
         {
           "datasource": {
-            "type": "gns-fits-spatial-observation",
-            "uid": "l7pAbYkVk"
+            "type": "sigrun-gnss",
+            "uid": "6O8eCYV4z"
           },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "drawStyle": "line",
-                "fillOpacity": 0,
-                "gradientMode": "none",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "lineInterpolation": "linear",
-                "lineWidth": 1,
-                "pointSize": 5,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "auto",
-                "spanNulls": false,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green"
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              },
-              "unit": "kg/s"
-            },
-            "overrides": [
-              {
-                "matcher": {
-                  "id": "byName",
-                  "options": " CO2-flux-a (kg/s)"
-                },
-                "properties": [
-                  {
-                    "id": "custom.axisPlacement",
-                    "value": "right"
-                  }
-                ]
-              }
-            ]
-          },
-          "gridPos": {
-            "h": 6,
-            "w": 24,
-            "x": 0,
-            "y": 53
-          },
-          "id": 42,
-          "options": {
-            "legend": {
-              "calcs": [],
-              "displayMode": "list",
-              "placement": "bottom"
-            },
-            "tooltip": {
-              "mode": "single",
-              "sort": "none"
-            }
-          },
-          "targets": [
-            {
-              "datasource": {
-                "type": "gns-fits-spatial-observation",
-                "uid": "l7pAbYkVk"
-              },
-              "method": "cont",
-              "refId": "SO2",
-              "site": "RU000",
-              "type": "SO2-flux-a"
-            },
-            {
-              "datasource": {
-                "type": "gns-fits-spatial-observation",
-                "uid": "l7pAbYkVk"
-              },
-              "hide": false,
-              "method": "cont",
-              "refId": "CO2",
-              "site": "RU000",
-              "type": "CO2-flux-a"
-            },
-            {
-              "datasource": {
-                "type": "gns-fits-spatial-observation",
-                "uid": "l7pAbYkVk"
-              },
-              "hide": false,
-              "method": "cont",
-              "refId": "H2S",
-              "site": "RU000",
-              "type": "H2S-flux-a"
-            }
-          ],
-          "transformations": [
-            {
-              "id": "calculateField",
-              "options": {
-                "binary": {
-                  "left": " H2S-flux-a (kg/s) RU000",
-                  "operator": "*",
-                  "reducer": "sum",
-                  "right": "100"
-                },
-                "mode": "binary",
-                "reduce": {
-                  "reducer": "sum"
-                }
-              }
-            },
-            {
-              "id": "sortBy",
-              "options": {
-                "fields": {},
-                "sort": [
-                  {
-                    "desc": false,
-                    "field": "date-time"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "organize",
-              "options": {
-                "excludeByName": {
-                  " H2S-flux-a (kg/s)": false,
-                  " H2S-flux-a (kg/s) RU000": true,
-                  " error (C)": true,
-                  " error (kg/s)": true,
-                  " error (mg/L)": true
-                },
-                "indexByName": {},
-                "renameByName": {}
-              }
-            }
-          ],
-          "type": "timeseries"
+          "period": "8h",
+          "refId": "A",
+          "siteID": "VGOT"
         }
       ],
-      "title": "Chemistry",
-      "type": "row"
+      "transformations": [
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "east": false,
+              "err_east": false,
+              "err_north": true,
+              "err_vertical": true,
+              "north": true,
+              "vertical": true
+            },
+            "indexByName": {},
+            "renameByName": {}
+          }
+        },
+        {
+          "id": "calculateField",
+          "options": {
+            "alias": "east_max",
+            "binary": {
+              "left": "east",
+              "reducer": "sum",
+              "right": "err_east"
+            },
+            "mode": "binary",
+            "reduce": {
+              "reducer": "sum"
+            }
+          }
+        },
+        {
+          "id": "calculateField",
+          "options": {
+            "alias": "east_min",
+            "binary": {
+              "left": "east",
+              "operator": "-",
+              "reducer": "sum",
+              "right": "err_east"
+            },
+            "mode": "binary",
+            "reduce": {
+              "reducer": "sum"
+            }
+          }
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "err_east": true,
+              "err_north": true
+            },
+            "indexByName": {},
+            "renameByName": {}
+          }
+        }
+      ],
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "sigrun-gnss",
+        "uid": "6O8eCYV4z"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Up (mm)",
+            "axisPlacement": "left",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 1,
+            "pointSize": 6,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "vertical"
+            },
+            "properties": [
+              {
+                "id": "custom.showPoints",
+                "value": "always"
+              },
+              {
+                "id": "custom.lineWidth",
+                "value": 0
+              },
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "red",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "vertical_min"
+            },
+            "properties": [
+              {
+                "id": "custom.lineWidth",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "vertical_max"
+            },
+            "properties": [
+              {
+                "id": "custom.fillBelowTo",
+                "value": "vertical_min"
+              },
+              {
+                "id": "custom.lineWidth",
+                "value": 0
+              },
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "text",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 6,
+        "y": 13
+      },
+      "id": 78,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "asc"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "sigrun-gnss",
+            "uid": "6O8eCYV4z"
+          },
+          "period": "8h",
+          "refId": "A",
+          "siteID": "VGOT"
+        }
+      ],
+      "transformations": [
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "east": true,
+              "err_east": true,
+              "err_north": true,
+              "err_vertical": false,
+              "north": true,
+              "vertical": false
+            },
+            "indexByName": {},
+            "renameByName": {}
+          }
+        },
+        {
+          "id": "calculateField",
+          "options": {
+            "alias": "vertical_max",
+            "binary": {
+              "left": "vertical",
+              "reducer": "sum",
+              "right": "err_vertical"
+            },
+            "mode": "binary",
+            "reduce": {
+              "reducer": "sum"
+            }
+          }
+        },
+        {
+          "id": "calculateField",
+          "options": {
+            "alias": "vertical_min",
+            "binary": {
+              "left": "vertical",
+              "operator": "-",
+              "reducer": "sum",
+              "right": "err_vertical"
+            },
+            "mode": "binary",
+            "reduce": {
+              "reducer": "sum"
+            }
+          }
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "err_east": true,
+              "err_north": true,
+              "err_vertical": true
+            },
+            "indexByName": {},
+            "renameByName": {}
+          }
+        }
+      ],
+      "type": "timeseries"
     },
     {
       "collapsed": false,
@@ -1284,7 +847,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 23
+        "y": 18
       },
       "id": 71,
       "panels": [],
@@ -1313,7 +876,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               }
             ]
           }
@@ -1324,7 +888,7 @@
         "h": 15,
         "w": 7,
         "x": 0,
-        "y": 24
+        "y": 19
       },
       "id": 44,
       "options": {
@@ -1340,6 +904,7 @@
           "mouseWheelZoom": true,
           "showAttribution": true,
           "showDebug": false,
+          "showMeasure": false,
           "showScale": false,
           "showZoom": true
         },
@@ -1388,14 +953,18 @@
             "type": "markers"
           }
         ],
+        "tooltip": {
+          "mode": "details"
+        },
         "view": {
+          "allLayers": true,
           "id": "coords",
           "lat": -38.825945,
           "lon": 175.916745,
           "zoom": 10.23
         }
       },
-      "pluginVersion": "9.0.0",
+      "pluginVersion": "9.3.1",
       "targets": [
         {
           "bbox": "175.5972,-39.,176.2083,-38.4987",
@@ -1437,6 +1006,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "Magnitude",
             "axisPlacement": "left",
             "barAlignment": 0,
@@ -1469,7 +1040,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               }
             ]
           }
@@ -1493,14 +1065,15 @@
         "h": 5,
         "w": 17,
         "x": 7,
-        "y": 24
+        "y": 19
       },
       "id": 48,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "single",
@@ -1552,6 +1125,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "Cumulative number of events",
             "axisPlacement": "left",
             "barAlignment": 0,
@@ -1584,7 +1159,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               }
             ]
           }
@@ -1595,14 +1171,15 @@
         "h": 5,
         "w": 17,
         "x": 7,
-        "y": 29
+        "y": 24
       },
       "id": 49,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "multi",
@@ -1656,6 +1233,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "Depth (km)",
             "axisPlacement": "left",
             "barAlignment": 0,
@@ -1690,7 +1269,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               }
             ]
           },
@@ -1702,14 +1282,15 @@
         "h": 5,
         "w": 17,
         "x": 7,
-        "y": 34
+        "y": 29
       },
       "id": 50,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "single",
@@ -1754,7 +1335,7 @@
     }
   ],
   "refresh": "",
-  "schemaVersion": 36,
+  "schemaVersion": 37,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -1781,6 +1362,6 @@
   "timezone": "",
   "title": "Low-Rate Tongariro",
   "uid": "Xlun9QIVz",
-  "version": 4,
+  "version": 2,
   "weekStart": ""
 }
