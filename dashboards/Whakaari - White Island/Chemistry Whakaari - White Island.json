@@ -1,0 +1,2906 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 15,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 7,
+      "panels": [
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 0,
+            "y": 1
+          },
+          "id": 4,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "Al-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "Al concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " Al-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 4,
+            "y": 1
+          },
+          "id": 9,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "As-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "As concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " As-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 8,
+            "y": 1
+          },
+          "id": 10,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "Br-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "Br concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " Br-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 12,
+            "y": 1
+          },
+          "id": 11,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "B-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "B concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " B-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 16,
+            "y": 1
+          },
+          "id": 12,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "Ca-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "Ca concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " Ca-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 0,
+            "y": 9
+          },
+          "id": 13,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "Cl-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "Cl concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " Cl-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 4,
+            "y": 9
+          },
+          "id": 14,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "d18O-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "d18O concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " d18O-w (per mil)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 8,
+            "y": 9
+          },
+          "id": 15,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "d2H-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "d2H concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " d2H-w (per mil)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 12,
+            "y": 9
+          },
+          "id": 16,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "Fe-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "Fe concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " Fe-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 16,
+            "y": 9
+          },
+          "id": 17,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "F-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "F concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " F-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 0,
+            "y": 17
+          },
+          "id": 18,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "H2S-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "H2S concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " H2S-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 4,
+            "y": 17
+          },
+          "id": 19,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "HCO3-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "HCO3 concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " HCO3-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 8,
+            "y": 17
+          },
+          "id": 20,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "K-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "K concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " K-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 12,
+            "y": 17
+          },
+          "id": 21,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "Li-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "Li concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " Li-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 16,
+            "y": 17
+          },
+          "id": 22,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "Mg-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "Mg concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " Mg-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 0,
+            "y": 25
+          },
+          "id": 23,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "Na-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "Na concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " Na-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 4,
+            "y": 25
+          },
+          "id": 24,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "NH3-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "NH3 concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " NH3-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 8,
+            "y": 25
+          },
+          "id": 25,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "NO3-N-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "NO3-N concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " NO3-N-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 12,
+            "y": 25
+          },
+          "id": 26,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "ph"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "degree of acidity or alkalinity of a sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " ph (-)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 0,
+            "y": 33
+          },
+          "id": 27,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "SiO2-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "SiO2 concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " SiO2-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 4,
+            "y": 33
+          },
+          "id": 28,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "SO4-w"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "SiO2 concentration in a water sample",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " SO4-w (mg/L)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "j_4IFfh4z"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 4,
+            "x": 8,
+            "y": 33
+          },
+          "id": 29,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "marcusolsson-csv-datasource",
+                "uid": "j_4IFfh4z"
+              },
+              "decimalSeparator": ".",
+              "delimiter": ",",
+              "header": true,
+              "ignoreUnknown": false,
+              "params": [
+                [
+                  "siteID",
+                  "$site"
+                ],
+                [
+                  "typeID",
+                  "t"
+                ]
+              ],
+              "refId": "A",
+              "schema": [
+                {
+                  "name": "",
+                  "type": "string"
+                }
+              ],
+              "skipRows": 0
+            }
+          ],
+          "title": "temperature",
+          "transformations": [
+            {
+              "id": "convertFieldType",
+              "options": {
+                "conversions": [
+                  {
+                    "destinationType": "time",
+                    "targetField": "date-time"
+                  },
+                  {
+                    "destinationType": "number",
+                    "targetField": " t (C)"
+                  }
+                ],
+                "fields": {}
+              }
+            }
+          ],
+          "type": "timeseries"
+        }
+      ],
+      "repeat": "site",
+      "repeatDirection": "h",
+      "title": "$site",
+      "type": "row"
+    }
+  ],
+  "refresh": false,
+  "schemaVersion": 37,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "selected": true,
+          "text": [
+            "All"
+          ],
+          "value": [
+            "$__all"
+          ]
+        },
+        "hide": 0,
+        "includeAll": true,
+        "multi": true,
+        "name": "site",
+        "options": [
+          {
+            "selected": true,
+            "text": "All",
+            "value": "$__all"
+          },
+          {
+            "selected": false,
+            "text": "WI201",
+            "value": "WI201"
+          },
+          {
+            "selected": false,
+            "text": "WI220",
+            "value": "WI220"
+          },
+          {
+            "selected": false,
+            "text": "WI221",
+            "value": "WI221"
+          },
+          {
+            "selected": false,
+            "text": "WI222",
+            "value": "WI222"
+          }
+        ],
+        "query": "WI201,WI220,WI221,WI222",
+        "queryValue": "",
+        "skipUrlSync": false,
+        "type": "custom"
+      }
+    ]
+  },
+  "time": {
+    "from": "2004-05-18T00:00:00.000Z",
+    "to": "2019-12-31T11:00:00.000Z"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Chemistry Whakaari - White Island",
+  "uid": "IiBqSx24k",
+  "version": 9,
+  "weekStart": ""
+}
