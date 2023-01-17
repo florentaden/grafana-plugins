@@ -1,3 +1,7 @@
 grafana-vumt
 **/node_modules/
 **/dist/
+other_codes
+fits-obs-var
+tilde-data
+tilde-datasummary
