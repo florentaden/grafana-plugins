@@ -52,7 +52,7 @@
             "h": 3,
             "w": 24,
             "x": 0,
-            "y": 6
+            "y": 1
           },
           "handleMetric": {},
           "html_data": "<h1 id=\"volcanoID\">\n</h1>",
@@ -85,7 +85,7 @@
             "h": 5,
             "w": 24,
             "x": 0,
-            "y": 9
+            "y": 4
           },
           "id": 54,
           "options": {
@@ -110,7 +110,7 @@
             "h": 9,
             "w": 24,
             "x": 0,
-            "y": 14
+            "y": 9
           },
           "id": 41,
           "options": {
@@ -196,7 +196,7 @@
             "h": 8,
             "w": 6,
             "x": 0,
-            "y": 23
+            "y": 18
           },
           "id": 27,
           "options": {
@@ -280,7 +280,7 @@
             "h": 8,
             "w": 6,
             "x": 6,
-            "y": 23
+            "y": 18
           },
           "id": 28,
           "options": {
@@ -364,7 +364,7 @@
             "h": 8,
             "w": 6,
             "x": 0,
-            "y": 31
+            "y": 26
           },
           "id": 29,
           "options": {
@@ -375,6 +375,7 @@
               "base_url": "",
               "enable": false,
               "metric_field": "",
+              "open_in_tab": true,
               "suffix": ""
             },
             "overlay": {
@@ -394,10 +395,15 @@
                 "unit": "%"
               }
             },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
             "singleFill": true,
             "slideshow": {
               "duration": 5000,
               "enable": false,
+              "infinite": true,
               "pauseOnHover": true,
               "transition": "Slide",
               "transition_duration": 1000
@@ -442,7 +448,7 @@
             "h": 8,
             "w": 6,
             "x": 6,
-            "y": 31
+            "y": 26
           },
           "id": 30,
           "options": {
@@ -453,6 +459,7 @@
               "base_url": "",
               "enable": false,
               "metric_field": "",
+              "open_in_tab": true,
               "suffix": ""
             },
             "overlay": {
@@ -472,10 +479,15 @@
                 "unit": "%"
               }
             },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
             "singleFill": true,
             "slideshow": {
               "duration": 5000,
               "enable": false,
+              "infinite": true,
               "pauseOnHover": true,
               "transition": "Slide",
               "transition_duration": 1000
@@ -539,7 +551,7 @@
             "h": 3,
             "w": 24,
             "x": 0,
-            "y": 39
+            "y": 2
           },
           "handleMetric": {},
           "html_data": "<h1 id=\"volcanoID\">\n</h1>",
@@ -572,7 +584,7 @@
             "h": 5,
             "w": 24,
             "x": 0,
-            "y": 42
+            "y": 5
           },
           "id": 24,
           "options": {
@@ -597,7 +609,7 @@
             "h": 9,
             "w": 12,
             "x": 0,
-            "y": 47
+            "y": 10
           },
           "id": 6,
           "options": {
@@ -683,7 +695,7 @@
             "h": 9,
             "w": 12,
             "x": 12,
-            "y": 47
+            "y": 10
           },
           "id": 21,
           "options": {
@@ -769,7 +781,7 @@
             "h": 8,
             "w": 6,
             "x": 0,
-            "y": 56
+            "y": 19
           },
           "id": 9,
           "options": {
@@ -853,7 +865,7 @@
             "h": 8,
             "w": 6,
             "x": 6,
-            "y": 56
+            "y": 19
           },
           "id": 10,
           "options": {
@@ -937,7 +949,7 @@
             "h": 8,
             "w": 6,
             "x": 12,
-            "y": 56
+            "y": 19
           },
           "id": 11,
           "options": {
@@ -1021,7 +1033,7 @@
             "h": 8,
             "w": 6,
             "x": 18,
-            "y": 56
+            "y": 19
           },
           "id": 12,
           "options": {
@@ -1105,7 +1117,7 @@
             "h": 8,
             "w": 6,
             "x": 0,
-            "y": 64
+            "y": 27
           },
           "id": 13,
           "options": {
@@ -1116,6 +1128,7 @@
               "base_url": "",
               "enable": false,
               "metric_field": "",
+              "open_in_tab": true,
               "suffix": ""
             },
             "overlay": {
@@ -1135,10 +1148,15 @@
                 "unit": "%"
               }
             },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
             "singleFill": true,
             "slideshow": {
               "duration": 5000,
               "enable": false,
+              "infinite": true,
               "pauseOnHover": true,
               "transition": "Slide",
               "transition_duration": 1000
@@ -1183,7 +1201,7 @@
             "h": 8,
             "w": 6,
             "x": 6,
-            "y": 64
+            "y": 27
           },
           "id": 14,
           "options": {
@@ -1194,6 +1212,7 @@
               "base_url": "",
               "enable": false,
               "metric_field": "",
+              "open_in_tab": true,
               "suffix": ""
             },
             "overlay": {
@@ -1213,10 +1232,15 @@
                 "unit": "%"
               }
             },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
             "singleFill": true,
             "slideshow": {
               "duration": 5000,
               "enable": false,
+              "infinite": true,
               "pauseOnHover": true,
               "transition": "Slide",
               "transition_duration": 1000
@@ -1261,7 +1285,7 @@
             "h": 8,
             "w": 6,
             "x": 12,
-            "y": 64
+            "y": 27
           },
           "id": 15,
           "options": {
@@ -1272,6 +1296,7 @@
               "base_url": "",
               "enable": false,
               "metric_field": "",
+              "open_in_tab": true,
               "suffix": ""
             },
             "overlay": {
@@ -1291,10 +1316,15 @@
                 "unit": "%"
               }
             },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
             "singleFill": true,
             "slideshow": {
               "duration": 5000,
               "enable": false,
+              "infinite": true,
               "pauseOnHover": true,
               "transition": "Slide",
               "transition_duration": 1000
@@ -1339,7 +1369,7 @@
             "h": 8,
             "w": 6,
             "x": 18,
-            "y": 64
+            "y": 27
           },
           "id": 16,
           "options": {
@@ -1350,6 +1380,7 @@
               "base_url": "",
               "enable": false,
               "metric_field": "",
+              "open_in_tab": true,
               "suffix": ""
             },
             "overlay": {
@@ -1369,10 +1400,15 @@
                 "unit": "%"
               }
             },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
             "singleFill": true,
             "slideshow": {
               "duration": 5000,
               "enable": false,
+              "infinite": true,
               "pauseOnHover": true,
               "transition": "Slide",
               "transition_duration": 1000
@@ -1436,7 +1472,7 @@
             "h": 3,
             "w": 24,
             "x": 0,
-            "y": 38
+            "y": 3
           },
           "handleMetric": {},
           "html_data": "<h1 id=\"volcanoID\">\n</h1>",
@@ -1469,7 +1505,7 @@
             "h": 5,
             "w": 24,
             "x": 0,
-            "y": 41
+            "y": 6
           },
           "id": 34,
           "options": {
@@ -1494,7 +1530,7 @@
             "h": 8,
             "w": 6,
             "x": 0,
-            "y": 46
+            "y": 11
           },
           "id": 35,
           "options": {
@@ -1577,8 +1613,8 @@
           "gridPos": {
             "h": 8,
             "w": 6,
-            "x": 0,
-            "y": 54
+            "x": 6,
+            "y": 11
           },
           "id": 36,
           "options": {
@@ -1681,7 +1717,7 @@
             "h": 3,
             "w": 24,
             "x": 0,
-            "y": 12
+            "y": 4
           },
           "handleMetric": {},
           "html_data": "<h1 id=\"volcanoID\">\n</h1>",
@@ -1704,6 +1740,199 @@
           ],
           "transparent": true,
           "type": "aidanmountford-html-panel"
+        },
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "gridPos": {
+            "h": 5,
+            "w": 24,
+            "x": 0,
+            "y": 7
+          },
+          "id": 87,
+          "options": {
+            "maxItems": 10,
+            "query": "Auckland",
+            "showHeadings": false,
+            "showRecentlyViewed": false,
+            "showSearch": true,
+            "showStarred": false,
+            "tags": []
+          },
+          "pluginVersion": "9.3.1",
+          "title": "Dashboard List",
+          "type": "dashlist"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 0,
+            "y": 12
+          },
+          "id": 85,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "HBAZ",
+              "type": "drum"
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 6,
+            "y": 12
+          },
+          "id": 86,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "HBAZ",
+              "type": "combined"
+            }
+          ],
+          "type": "dalvany-image-panel"
         }
       ],
       "title": "Auckland Volcanic Field",
@@ -1733,7 +1962,7 @@
             "h": 3,
             "w": 24,
             "x": 0,
-            "y": 4
+            "y": 5
           },
           "handleMetric": {},
           "html_data": "<h1 id=\"volcanoID\">\n</h1>",
@@ -1756,6 +1985,199 @@
           ],
           "transparent": true,
           "type": "aidanmountford-html-panel"
+        },
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "gridPos": {
+            "h": 5,
+            "w": 24,
+            "x": 0,
+            "y": 8
+          },
+          "id": 90,
+          "options": {
+            "maxItems": 10,
+            "query": "Mayor",
+            "showHeadings": false,
+            "showRecentlyViewed": false,
+            "showSearch": true,
+            "showStarred": false,
+            "tags": []
+          },
+          "pluginVersion": "9.3.1",
+          "title": "Dashboard List",
+          "type": "dashlist"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 0,
+            "y": 13
+          },
+          "id": 88,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "MYRZ",
+              "type": "drum"
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 6,
+            "y": 13
+          },
+          "id": 89,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "MYRZ",
+              "type": "combined"
+            }
+          ],
+          "type": "dalvany-image-panel"
         }
       ],
       "title": "Mayor Island",
@@ -1785,7 +2207,7 @@
             "h": 3,
             "w": 24,
             "x": 0,
-            "y": 5
+            "y": 6
           },
           "handleMetric": {},
           "html_data": "<h1 id=\"volcanoID\">\n</h1>",
@@ -1808,6 +2230,199 @@
           ],
           "transparent": true,
           "type": "aidanmountford-html-panel"
+        },
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "gridPos": {
+            "h": 5,
+            "w": 24,
+            "x": 0,
+            "y": 9
+          },
+          "id": 93,
+          "options": {
+            "maxItems": 10,
+            "query": "Northland",
+            "showHeadings": false,
+            "showRecentlyViewed": false,
+            "showSearch": true,
+            "showStarred": false,
+            "tags": []
+          },
+          "pluginVersion": "9.3.1",
+          "title": "Dashboard List",
+          "type": "dashlist"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 0,
+            "y": 14
+          },
+          "id": 91,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "OUZ",
+              "type": "drum"
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 6,
+            "y": 14
+          },
+          "id": 92,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "OUZ",
+              "type": "combined"
+            }
+          ],
+          "type": "dalvany-image-panel"
         }
       ],
       "title": "Northland",
@@ -1837,7 +2452,7 @@
             "h": 3,
             "w": 24,
             "x": 0,
-            "y": 3
+            "y": 7
           },
           "handleMetric": {},
           "html_data": "<h1 id=\"volcanoID\">\n</h1>",
@@ -1860,6 +2475,199 @@
           ],
           "transparent": true,
           "type": "aidanmountford-html-panel"
+        },
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "gridPos": {
+            "h": 5,
+            "w": 24,
+            "x": 0,
+            "y": 10
+          },
+          "id": 94,
+          "options": {
+            "maxItems": 10,
+            "query": "Rotorua",
+            "showHeadings": false,
+            "showRecentlyViewed": false,
+            "showSearch": true,
+            "showStarred": false,
+            "tags": []
+          },
+          "pluginVersion": "9.3.1",
+          "title": "Dashboard List",
+          "type": "dashlist"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 0,
+            "y": 15
+          },
+          "id": 95,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "UTU",
+              "type": "drum"
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 6,
+            "y": 15
+          },
+          "id": 96,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "UTU",
+              "type": "combined"
+            }
+          ],
+          "type": "dalvany-image-panel"
         }
       ],
       "title": "Rotorua",
@@ -1889,7 +2697,7 @@
             "h": 3,
             "w": 24,
             "x": 0,
-            "y": 42
+            "y": 8
           },
           "handleMetric": {},
           "html_data": "<h1 id=\"volcanoID\">\n</h1>",
@@ -1912,6 +2720,452 @@
           ],
           "transparent": true,
           "type": "aidanmountford-html-panel"
+        },
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "gridPos": {
+            "h": 5,
+            "w": 24,
+            "x": 0,
+            "y": 11
+          },
+          "id": 97,
+          "options": {
+            "maxItems": 10,
+            "query": "Kermadec",
+            "showHeadings": false,
+            "showRecentlyViewed": false,
+            "showSearch": true,
+            "showStarred": false,
+            "tags": []
+          },
+          "pluginVersion": "9.3.1",
+          "title": "Dashboard List",
+          "type": "dashlist"
+        },
+        {
+          "datasource": {
+            "type": "geonet-volcanocamera-datasource",
+            "uid": "LoQdKvWVz"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 24,
+            "x": 0,
+            "y": 16
+          },
+          "id": 102,
+          "options": {
+            "alt_field": "",
+            "height": "270",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "270"
+          },
+          "pluginVersion": "9.0.0",
+          "targets": [
+            {
+              "datasource": {
+                "type": "geonet-volcanocamera-datasource",
+                "uid": "LoQdKvWVz"
+              },
+              "image_number": "6",
+              "refId": "A",
+              "volId": "raoulisland"
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 0,
+            "y": 24
+          },
+          "id": 98,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "RAR",
+              "type": "drum"
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 6,
+            "y": 24
+          },
+          "id": 100,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "RAR",
+              "type": "combined"
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 0,
+            "y": 32
+          },
+          "id": 99,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "RIZ",
+              "type": "drum"
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 6,
+            "y": 32
+          },
+          "id": 101,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "RIZ",
+              "type": "combined"
+            }
+          ],
+          "type": "dalvany-image-panel"
         }
       ],
       "title": "Kermadec Islands",
@@ -1941,7 +3195,7 @@
             "h": 3,
             "w": 24,
             "x": 0,
-            "y": 2
+            "y": 41
           },
           "handleMetric": {},
           "html_data": "<h1 id=\"volcanoID\">\n</h1>",
@@ -1964,6 +3218,452 @@
           ],
           "transparent": true,
           "type": "aidanmountford-html-panel"
+        },
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "gridPos": {
+            "h": 5,
+            "w": 24,
+            "x": 0,
+            "y": 44
+          },
+          "id": 104,
+          "options": {
+            "maxItems": 10,
+            "query": "Taranaki",
+            "showHeadings": false,
+            "showRecentlyViewed": false,
+            "showSearch": true,
+            "showStarred": false,
+            "tags": []
+          },
+          "pluginVersion": "9.3.1",
+          "title": "Dashboard List",
+          "type": "dashlist"
+        },
+        {
+          "datasource": {
+            "type": "geonet-volcanocamera-datasource",
+            "uid": "LoQdKvWVz"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 24,
+            "x": 0,
+            "y": 49
+          },
+          "id": 103,
+          "options": {
+            "alt_field": "",
+            "height": "270",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "270"
+          },
+          "pluginVersion": "9.0.0",
+          "targets": [
+            {
+              "datasource": {
+                "type": "geonet-volcanocamera-datasource",
+                "uid": "LoQdKvWVz"
+              },
+              "image_number": "6",
+              "refId": "A",
+              "volId": "taranaki"
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 0,
+            "y": 57
+          },
+          "id": 105,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "NEZ",
+              "type": "drum"
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 6,
+            "y": 57
+          },
+          "id": 107,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "NEZ",
+              "type": "combined"
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 0,
+            "y": 65
+          },
+          "id": 106,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "PKE",
+              "type": "drum"
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 6,
+            "y": 65
+          },
+          "id": 108,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "PKE",
+              "type": "combined"
+            }
+          ],
+          "type": "dalvany-image-panel"
         }
       ],
       "title": "Taranaki",
@@ -3593,7 +5293,7 @@
             "h": 3,
             "w": 24,
             "x": 0,
-            "y": 1
+            "y": 44
           },
           "handleMetric": {},
           "html_data": "<h1 id=\"volcanoID\">\n</h1>",
@@ -3616,6 +5316,199 @@
           ],
           "transparent": true,
           "type": "aidanmountford-html-panel"
+        },
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "gridPos": {
+            "h": 5,
+            "w": 24,
+            "x": 0,
+            "y": 47
+          },
+          "id": 110,
+          "options": {
+            "maxItems": 10,
+            "query": "Okataina",
+            "showHeadings": false,
+            "showRecentlyViewed": false,
+            "showSearch": true,
+            "showStarred": false,
+            "tags": []
+          },
+          "pluginVersion": "9.3.1",
+          "title": "Dashboard List",
+          "type": "dashlist"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 0,
+            "y": 52
+          },
+          "id": 109,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "TARZ",
+              "type": "drum"
+            }
+          ],
+          "type": "dalvany-image-panel"
+        },
+        {
+          "datasource": {
+            "type": "gns-seismic-plots",
+            "uid": "IB95RcZ4z"
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 6,
+            "x": 6,
+            "y": 52
+          },
+          "id": 111,
+          "options": {
+            "alt_field": "",
+            "height": "75",
+            "icon_field": "",
+            "open_url": {
+              "base_url": "",
+              "enable": false,
+              "metric_field": "",
+              "open_in_tab": true,
+              "suffix": ""
+            },
+            "overlay": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#66666620"
+              },
+              "field": "",
+              "height": {
+                "size": 5,
+                "unit": "%"
+              },
+              "position": "Top right",
+              "width": {
+                "size": 5,
+                "unit": "%"
+              }
+            },
+            "shared_cross_hair": {
+              "backgroundColor": "#FFFFFF10",
+              "borderColor": "#FFFFFF20"
+            },
+            "singleFill": true,
+            "slideshow": {
+              "duration": 5000,
+              "enable": false,
+              "infinite": true,
+              "pauseOnHover": true,
+              "transition": "Slide",
+              "transition_duration": 1000
+            },
+            "tooltip": false,
+            "tooltip_date_elapsed": false,
+            "tooltip_field": "",
+            "tooltip_include_date": false,
+            "tooltip_include_field": true,
+            "underline": {
+              "bindings": {
+                "bindings": [],
+                "has_text": true,
+                "unbounded": "#CCCCDCFF"
+              },
+              "bindings_field": "",
+              "field": "",
+              "text_align": "left",
+              "text_size": "14"
+            },
+            "width": "75"
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "gns-seismic-plots",
+                "uid": "IB95RcZ4z"
+              },
+              "refId": "A",
+              "site": "TARZ",
+              "type": "combined"
+            }
+          ],
+          "type": "dalvany-image-panel"
         }
       ],
       "title": "Okataina",
@@ -3637,6 +5530,6 @@
   "timezone": "",
   "title": "Overview",
   "uid": "GYvMluZ4k",
-  "version": 3,
+  "version": 10,
   "weekStart": ""
 }
