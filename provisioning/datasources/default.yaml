@@ -64,5 +64,12 @@ datasources:
     type: gns-fits-spatial-observation
     access: direct
     uid: "l7pAbYkVk"
-
+  - name: CSV-FITS
+    type: marcusolsson-csv-datasource
+    url: http://fits.geonet.org.nz/observation?
+    uid: "j_4IFfh4z"
+  - name: JSON-FITS
+    type: marcusolsson-json-datasource
+    url: http://fits.geonet.org.nz/site?
+    uid: "eK4JYYTVz"
     
