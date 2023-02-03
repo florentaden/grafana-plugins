@@ -24,7 +24,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 5,
+  "id": 13,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -893,12 +893,9 @@
       "id": 44,
       "options": {
         "basemap": {
-          "config": {
-            "showLabels": true,
-            "theme": "auto"
-          },
+          "config": {},
           "name": "Layer 0",
-          "type": "carto"
+          "type": "xyz"
         },
         "controls": {
           "mouseWheelZoom": true,
@@ -959,21 +956,21 @@
         "view": {
           "allLayers": true,
           "id": "coords",
-          "lat": -38.825945,
-          "lon": 175.916745,
-          "zoom": 10.23
+          "lat": -39.14399,
+          "lon": 175.642675,
+          "zoom": 10.9
         }
       },
       "pluginVersion": "9.3.1",
       "targets": [
         {
-          "bbox": "175.5972,-39.,176.2083,-38.4987",
+          "bbox": "175.5680,-39.2192,175.7208,-39.0829",
           "datasource": {
             "type": "gns-quakesearch",
             "uid": "jig3QXZ4z"
           },
           "hide": false,
-          "maxdepth": "30",
+          "maxdepth": "100",
           "maxmag": "10",
           "mindepth": "0",
           "minmag": "0",
@@ -1334,7 +1331,7 @@
       "type": "timeseries"
     }
   ],
-  "refresh": "",
+  "refresh": false,
   "schemaVersion": 37,
   "style": "dark",
   "tags": [],
@@ -1360,8 +1357,8 @@
     ]
   },
   "timezone": "",
-  "title": "Low-Rate Tongariro",
+  "title": "Low-Rate Tongariro - Ngauruhoe",
   "uid": "Xlun9QIVz",
-  "version": 2,
+  "version": 6,
   "weekStart": ""
 }
