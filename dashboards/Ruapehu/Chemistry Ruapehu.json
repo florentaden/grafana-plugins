@@ -24,7 +24,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 22,
+  "id": 13,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -3130,6 +3130,6 @@
   "timezone": "",
   "title": "Chemistry Ruapehu",
   "uid": "05n3g_04k",
-  "version": 3,
+  "version": 1,
   "weekStart": ""
 }

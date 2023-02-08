@@ -24,37 +24,72 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 4,
+  "id": 21,
   "links": [],
   "liveNow": false,
   "panels": [
     {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
       "gridPos": {
-        "h": 6,
+        "h": 7,
         "w": 4,
         "x": 0,
         "y": 0
       },
-      "id": 39,
-      "libraryPanel": {
-        "name": "Ruapehu Dashboards",
-        "uid": "5_h0gl0Vk"
+      "id": 43,
+      "options": {
+        "maxItems": 10,
+        "query": "Ruapehu",
+        "showHeadings": false,
+        "showRecentlyViewed": false,
+        "showSearch": true,
+        "showStarred": false,
+        "tags": []
       },
-      "title": "Ruapehu Dashboards"
+      "pluginVersion": "9.3.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "refId": "A"
+        }
+      ],
+      "title": "Ruapehu Dashboards",
+      "transparent": true,
+      "type": "dashlist"
     },
     {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
       "gridPos": {
         "h": 6,
         "w": 4,
         "x": 4,
         "y": 0
       },
-      "id": 41,
-      "libraryPanel": {
-        "name": "General Dashboards",
-        "uid": "Fe6SRlAVz"
+      "id": 45,
+      "options": {
+        "maxItems": 10,
+        "query": "General",
+        "showHeadings": false,
+        "showRecentlyViewed": false,
+        "showSearch": true,
+        "showStarred": false,
+        "tags": []
       },
-      "title": "General Dashboards"
+      "pluginVersion": "9.3.1",
+      "title": "General Dashboards",
+      "transparent": true,
+      "type": "dashlist"
     },
     {
       "collapsed": true,
@@ -62,7 +97,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 6
+        "y": 7
       },
       "id": 37,
       "panels": [
@@ -75,7 +110,7 @@
             "h": 13,
             "w": 24,
             "x": 0,
-            "y": 17
+            "y": 33
           },
           "id": 5,
           "options": {
@@ -155,7 +190,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 30
+            "y": 46
           },
           "id": 6,
           "options": {
@@ -236,7 +271,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 7
+        "y": 8
       },
       "id": 35,
       "panels": [
@@ -277,7 +312,7 @@
             "h": 14,
             "w": 12,
             "x": 6,
-            "y": 18
+            "y": 34
           },
           "id": 24,
           "options": {
@@ -413,7 +448,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 8
+        "y": 9
       },
       "id": 33,
       "panels": [
@@ -426,7 +461,7 @@
             "h": 11,
             "w": 6,
             "x": 0,
-            "y": 19
+            "y": 35
           },
           "id": 8,
           "options": {
@@ -512,7 +547,7 @@
             "h": 11,
             "w": 6,
             "x": 6,
-            "y": 19
+            "y": 35
           },
           "id": 12,
           "options": {
@@ -598,7 +633,7 @@
             "h": 11,
             "w": 6,
             "x": 12,
-            "y": 19
+            "y": 35
           },
           "id": 15,
           "options": {
@@ -684,7 +719,7 @@
             "h": 11,
             "w": 6,
             "x": 18,
-            "y": 19
+            "y": 35
           },
           "id": 27,
           "options": {
@@ -770,7 +805,7 @@
             "h": 5,
             "w": 6,
             "x": 0,
-            "y": 30
+            "y": 46
           },
           "id": 14,
           "options": {
@@ -855,7 +890,7 @@
             "h": 5,
             "w": 6,
             "x": 6,
-            "y": 30
+            "y": 46
           },
           "id": 17,
           "options": {
@@ -940,7 +975,7 @@
             "h": 5,
             "w": 6,
             "x": 12,
-            "y": 30
+            "y": 46
           },
           "id": 18,
           "options": {
@@ -1025,7 +1060,7 @@
             "h": 5,
             "w": 6,
             "x": 18,
-            "y": 30
+            "y": 46
           },
           "id": 28,
           "options": {
@@ -1110,7 +1145,7 @@
             "h": 11,
             "w": 6,
             "x": 0,
-            "y": 35
+            "y": 51
           },
           "id": 13,
           "options": {
@@ -1195,7 +1230,7 @@
             "h": 11,
             "w": 6,
             "x": 6,
-            "y": 35
+            "y": 51
           },
           "id": 16,
           "options": {
@@ -1280,7 +1315,7 @@
             "h": 11,
             "w": 6,
             "x": 12,
-            "y": 35
+            "y": 51
           },
           "id": 19,
           "options": {
@@ -1365,7 +1400,7 @@
             "h": 11,
             "w": 6,
             "x": 18,
-            "y": 35
+            "y": 51
           },
           "id": 29,
           "options": {
@@ -1487,6 +1522,6 @@
   "timezone": "browser",
   "title": "High-Rate Ruapehu",
   "uid": "Y7XSZRRVk",
-  "version": 3,
+  "version": 2,
   "weekStart": ""
 }
