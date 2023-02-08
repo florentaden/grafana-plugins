@@ -72,4 +72,7 @@ datasources:
     type: marcusolsson-json-datasource
     url: http://fits.geonet.org.nz/site?
     uid: "eK4JYYTVz"
-    
+  - name: Volcano-Slideshow    
+    type: gns-volcano-slideshow-v3
+    access: direct 
+    uid: "NAu661v4z"
