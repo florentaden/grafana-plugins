@@ -57,3 +57,4 @@ RUN grafana-cli plugins install dalvany-image-panel
 RUN grafana-cli plugins install aidanmountford-html-panel
 RUN grafana-cli plugins install marcusolsson-csv-datasource
 RUN grafana-cli plugins install marcusolsson-json-datasource
+
