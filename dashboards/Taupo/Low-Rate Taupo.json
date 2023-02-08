@@ -24,17 +24,45 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 13,
+  "id": 19,
   "links": [],
   "liveNow": false,
   "panels": [
+    {
+      "gridPos": {
+        "h": 7,
+        "w": 4,
+        "x": 0,
+        "y": 0
+      },
+      "id": 99,
+      "libraryPanel": {
+        "name": "Taupo Dashboards",
+        "uid": "m28Igl0Vk"
+      },
+      "title": "Taupo Dashboards"
+    },
+    {
+      "gridPos": {
+        "h": 5,
+        "w": 4,
+        "x": 4,
+        "y": 0
+      },
+      "id": 101,
+      "libraryPanel": {
+        "name": "General Dashboards",
+        "uid": "Fe6SRlAVz"
+      },
+      "title": "General Dashboards"
+    },
     {
       "collapsed": false,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 0
+        "y": 7
       },
       "id": 67,
       "panels": [],
@@ -75,7 +103,7 @@
         "h": 13,
         "w": 6,
         "x": 0,
-        "y": 1
+        "y": 8
       },
       "id": 60,
       "options": {
@@ -339,7 +367,7 @@
         "h": 4,
         "w": 6,
         "x": 6,
-        "y": 1
+        "y": 8
       },
       "id": 78,
       "options": {
@@ -546,7 +574,7 @@
         "h": 4,
         "w": 6,
         "x": 12,
-        "y": 1
+        "y": 8
       },
       "id": 83,
       "options": {
@@ -753,7 +781,7 @@
         "h": 4,
         "w": 6,
         "x": 18,
-        "y": 1
+        "y": 8
       },
       "id": 86,
       "options": {
@@ -958,7 +986,7 @@
         "h": 4,
         "w": 6,
         "x": 6,
-        "y": 5
+        "y": 12
       },
       "id": 80,
       "options": {
@@ -1165,7 +1193,7 @@
         "h": 4,
         "w": 6,
         "x": 12,
-        "y": 5
+        "y": 12
       },
       "id": 84,
       "options": {
@@ -1372,7 +1400,7 @@
         "h": 4,
         "w": 6,
         "x": 18,
-        "y": 5
+        "y": 12
       },
       "id": 87,
       "options": {
@@ -1579,7 +1607,7 @@
         "h": 4,
         "w": 6,
         "x": 6,
-        "y": 9
+        "y": 16
       },
       "id": 82,
       "options": {
@@ -1787,7 +1815,7 @@
         "h": 4,
         "w": 6,
         "x": 12,
-        "y": 9
+        "y": 16
       },
       "id": 85,
       "options": {
@@ -1995,7 +2023,7 @@
         "h": 4,
         "w": 6,
         "x": 18,
-        "y": 9
+        "y": 16
       },
       "id": 88,
       "options": {
@@ -2205,7 +2233,7 @@
         "h": 4,
         "w": 6,
         "x": 6,
-        "y": 13
+        "y": 20
       },
       "id": 89,
       "options": {
@@ -2412,7 +2440,7 @@
         "h": 4,
         "w": 6,
         "x": 12,
-        "y": 13
+        "y": 20
       },
       "id": 92,
       "options": {
@@ -2619,7 +2647,7 @@
         "h": 4,
         "w": 6,
         "x": 18,
-        "y": 13
+        "y": 20
       },
       "id": 95,
       "options": {
@@ -2824,7 +2852,7 @@
         "h": 4,
         "w": 6,
         "x": 6,
-        "y": 17
+        "y": 24
       },
       "id": 90,
       "options": {
@@ -3031,7 +3059,7 @@
         "h": 4,
         "w": 6,
         "x": 12,
-        "y": 17
+        "y": 24
       },
       "id": 93,
       "options": {
@@ -3238,7 +3266,7 @@
         "h": 4,
         "w": 6,
         "x": 18,
-        "y": 17
+        "y": 24
       },
       "id": 96,
       "options": {
@@ -3374,8 +3402,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           }
@@ -3445,7 +3472,7 @@
         "h": 4,
         "w": 6,
         "x": 6,
-        "y": 21
+        "y": 28
       },
       "id": 91,
       "options": {
@@ -3582,8 +3609,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           }
@@ -3653,7 +3679,7 @@
         "h": 4,
         "w": 6,
         "x": 12,
-        "y": 21
+        "y": 28
       },
       "id": 94,
       "options": {
@@ -3790,8 +3816,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           }
@@ -3861,7 +3886,7 @@
         "h": 4,
         "w": 6,
         "x": 18,
-        "y": 21
+        "y": 28
       },
       "id": 97,
       "options": {
@@ -3955,7 +3980,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 25
+        "y": 32
       },
       "id": 71,
       "panels": [],
@@ -3984,8 +4009,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           }
@@ -3996,7 +4020,7 @@
         "h": 15,
         "w": 7,
         "x": 0,
-        "y": 26
+        "y": 33
       },
       "id": 44,
       "options": {
@@ -4148,8 +4172,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           }
@@ -4173,7 +4196,7 @@
         "h": 5,
         "w": 17,
         "x": 7,
-        "y": 26
+        "y": 33
       },
       "id": 48,
       "options": {
@@ -4267,8 +4290,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           }
@@ -4279,7 +4301,7 @@
         "h": 5,
         "w": 17,
         "x": 7,
-        "y": 31
+        "y": 38
       },
       "id": 49,
       "options": {
@@ -4377,8 +4399,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -4390,7 +4411,7 @@
         "h": 5,
         "w": 17,
         "x": 7,
-        "y": 36
+        "y": 43
       },
       "id": 50,
       "options": {
@@ -4470,6 +4491,6 @@
   "timezone": "",
   "title": "Low-Rate Taupo",
   "uid": "GIf4twSVz",
-  "version": 10,
+  "version": 3,
   "weekStart": ""
 }
