@@ -19,4 +19,6 @@ PORT=`docker inspect $CONTAINER | grep HostPort | tail -1 | awk -F\" '{print $4}
 echo grafana_dev up and running $CONTAINER
 echo Try
 echo http://`hostname`:$PORT
-docker exec -it $CONTAINER /bin/bash
+
+# -- talk to API to create a new user
+curl -XPOST -H "Content-Type: application/json" -d '{"name": "User", "email": "", "login": "user", "password":"user"}' http:///admin:admin@$HOSTNAME:$HOST_PORT/api/admin/users
