@@ -24,7 +24,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 13,
+  "id": 17,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -56,18 +56,31 @@
       "type": "dashlist"
     },
     {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
       "gridPos": {
-        "h": 8,
-        "w": 4,
+        "h": 6,
+        "w": 5,
         "x": 5,
         "y": 0
       },
       "id": 104,
-      "libraryPanel": {
-        "name": "General Dashboards",
-        "uid": "Fe6SRlAVz"
+      "options": {
+        "maxItems": 10,
+        "query": "General",
+        "showHeadings": false,
+        "showRecentlyViewed": false,
+        "showSearch": true,
+        "showStarred": false,
+        "tags": []
       },
-      "title": "General Dashboards"
+      "pluginVersion": "9.3.1",
+      "title": "General Dashboards",
+      "transparent": true,
+      "type": "dashlist"
     },
     {
       "collapsed": false,
@@ -3139,6 +3152,6 @@
   "timezone": "",
   "title": "Chemistry Tongariro and Ngauruhoe",
   "uid": "zi7p7tAVz",
-  "version": 4,
+  "version": 2,
   "weekStart": ""
 }

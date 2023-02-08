@@ -24,37 +24,63 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 6,
+  "id": 19,
   "links": [],
   "liveNow": false,
   "panels": [
     {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
       "gridPos": {
-        "h": 7,
+        "h": 8,
         "w": 5,
         "x": 0,
         "y": 0
       },
       "id": 49,
-      "libraryPanel": {
-        "name": "Tongariro and Ngauruhoe Dashboards",
-        "uid": "oPkPg_AVz"
+      "options": {
+        "maxItems": 10,
+        "query": "Tonga",
+        "showHeadings": false,
+        "showRecentlyViewed": false,
+        "showSearch": true,
+        "showStarred": false,
+        "tags": []
       },
-      "title": "Tongariro and Ngauruhoe Dashboards"
+      "pluginVersion": "9.3.1",
+      "title": "Tongariro and Ngauruhoe Dashboards",
+      "transparent": true,
+      "type": "dashlist"
     },
     {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
       "gridPos": {
-        "h": 7,
+        "h": 6,
         "w": 5,
         "x": 5,
         "y": 0
       },
       "id": 51,
-      "libraryPanel": {
-        "name": "General Dashboards",
-        "uid": "Fe6SRlAVz"
+      "options": {
+        "maxItems": 10,
+        "query": "General",
+        "showHeadings": false,
+        "showRecentlyViewed": false,
+        "showSearch": true,
+        "showStarred": false,
+        "tags": []
       },
-      "title": "General Dashboards"
+      "pluginVersion": "9.3.1",
+      "title": "General Dashboards",
+      "transparent": true,
+      "type": "dashlist"
     },
     {
       "collapsed": false,
@@ -62,7 +88,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 7
+        "y": 8
       },
       "id": 37,
       "panels": [],
@@ -78,7 +104,7 @@
         "h": 35,
         "w": 16,
         "x": 0,
-        "y": 8
+        "y": 9
       },
       "id": 5,
       "options": {
@@ -196,7 +222,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 43
+        "y": 44
       },
       "id": 35,
       "panels": [],
@@ -240,7 +266,7 @@
         "h": 14,
         "w": 12,
         "x": 6,
-        "y": 44
+        "y": 45
       },
       "id": 24,
       "options": {
@@ -392,7 +418,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 58
+        "y": 59
       },
       "id": 33,
       "panels": [],
@@ -408,7 +434,7 @@
         "h": 9,
         "w": 5,
         "x": 0,
-        "y": 59
+        "y": 60
       },
       "id": 8,
       "options": {
@@ -499,7 +525,7 @@
         "h": 9,
         "w": 5,
         "x": 5,
-        "y": 59
+        "y": 60
       },
       "id": 46,
       "options": {
@@ -590,7 +616,7 @@
         "h": 9,
         "w": 5,
         "x": 10,
-        "y": 59
+        "y": 60
       },
       "id": 41,
       "options": {
@@ -681,7 +707,7 @@
         "h": 9,
         "w": 5,
         "x": 15,
-        "y": 59
+        "y": 60
       },
       "id": 44,
       "options": {
@@ -772,7 +798,7 @@
         "h": 7,
         "w": 5,
         "x": 0,
-        "y": 68
+        "y": 69
       },
       "id": 13,
       "options": {
@@ -863,7 +889,7 @@
         "h": 7,
         "w": 5,
         "x": 5,
-        "y": 68
+        "y": 69
       },
       "id": 47,
       "options": {
@@ -954,7 +980,7 @@
         "h": 7,
         "w": 5,
         "x": 10,
-        "y": 68
+        "y": 69
       },
       "id": 42,
       "options": {
@@ -1045,7 +1071,7 @@
         "h": 7,
         "w": 5,
         "x": 15,
-        "y": 68
+        "y": 69
       },
       "id": 45,
       "options": {
@@ -1136,7 +1162,7 @@
         "h": 8,
         "w": 5,
         "x": 0,
-        "y": 75
+        "y": 76
       },
       "id": 38,
       "options": {
@@ -1227,7 +1253,7 @@
         "h": 7,
         "w": 5,
         "x": 0,
-        "y": 83
+        "y": 84
       },
       "id": 39,
       "options": {

@@ -24,37 +24,63 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 7,
+  "id": 20,
   "links": [],
   "liveNow": false,
   "panels": [
     {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
       "gridPos": {
         "h": 8,
-        "w": 5,
+        "w": 4,
         "x": 0,
         "y": 0
       },
       "id": 80,
-      "libraryPanel": {
-        "name": "Tongariro and Ngauruhoe Dashboards",
-        "uid": "oPkPg_AVz"
+      "options": {
+        "maxItems": 10,
+        "query": "Tonga",
+        "showHeadings": false,
+        "showRecentlyViewed": false,
+        "showSearch": true,
+        "showStarred": false,
+        "tags": []
       },
-      "title": "Tongariro and Ngauruhoe Dashboards"
+      "pluginVersion": "9.3.1",
+      "title": "Tongariro and Ngauruhoe Dashboards",
+      "transparent": true,
+      "type": "dashlist"
     },
     {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
       "gridPos": {
-        "h": 6,
+        "h": 7,
         "w": 4,
-        "x": 5,
+        "x": 4,
         "y": 0
       },
       "id": 82,
-      "libraryPanel": {
-        "name": "General Dashboards",
-        "uid": "Fe6SRlAVz"
+      "options": {
+        "maxItems": 10,
+        "query": "General",
+        "showHeadings": false,
+        "showRecentlyViewed": false,
+        "showSearch": true,
+        "showStarred": false,
+        "tags": []
       },
-      "title": "General Dashboards"
+      "pluginVersion": "9.3.1",
+      "title": "General Dashboards",
+      "transparent": true,
+      "type": "dashlist"
     },
     {
       "collapsed": false,
@@ -904,7 +930,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               }
             ]
           }
@@ -1064,7 +1091,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               }
             ]
           }
@@ -1182,7 +1210,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               }
             ]
           }
