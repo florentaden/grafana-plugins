@@ -24,17 +24,45 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 3,
+  "id": 4,
   "links": [],
   "liveNow": false,
   "panels": [
+    {
+      "gridPos": {
+        "h": 6,
+        "w": 4,
+        "x": 0,
+        "y": 0
+      },
+      "id": 39,
+      "libraryPanel": {
+        "name": "Ruapehu Dashboards",
+        "uid": "5_h0gl0Vk"
+      },
+      "title": "Ruapehu Dashboards"
+    },
+    {
+      "gridPos": {
+        "h": 6,
+        "w": 4,
+        "x": 4,
+        "y": 0
+      },
+      "id": 41,
+      "libraryPanel": {
+        "name": "General Dashboards",
+        "uid": "Fe6SRlAVz"
+      },
+      "title": "General Dashboards"
+    },
     {
       "collapsed": true,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 0
+        "y": 6
       },
       "id": 37,
       "panels": [
@@ -47,7 +75,7 @@
             "h": 13,
             "w": 24,
             "x": 0,
-            "y": 1
+            "y": 17
           },
           "id": 5,
           "options": {
@@ -127,7 +155,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 14
+            "y": 30
           },
           "id": 6,
           "options": {
@@ -203,176 +231,181 @@
       "type": "row"
     },
     {
-      "collapsed": false,
+      "collapsed": true,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 1
+        "y": 7
       },
       "id": 35,
-      "panels": [],
-      "title": "GeoNet Broad Band Stations",
-      "type": "row"
-    },
-    {
-      "datasource": {
-        "type": "geonet-seismic-sensor",
-        "uid": "dzoN_rM4k"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "thresholds"
+      "panels": [
+        {
+          "datasource": {
+            "type": "geonet-seismic-sensor",
+            "uid": "dzoN_rM4k"
           },
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 14,
+            "w": 12,
+            "x": 6,
+            "y": 18
+          },
+          "id": 24,
+          "options": {
+            "basemap": {
+              "config": {
+                "server": "topo"
+              },
+              "name": "Layer 0",
+              "type": "esri-xyz"
+            },
+            "controls": {
+              "mouseWheelZoom": true,
+              "showAttribution": true,
+              "showDebug": false,
+              "showMeasure": false,
+              "showScale": false,
+              "showZoom": true
+            },
+            "layers": [
+              {
+                "config": {
+                  "showLegend": false,
+                  "style": {
+                    "color": {
+                      "fixed": "red"
+                    },
+                    "opacity": 1,
+                    "rotation": {
+                      "fixed": 0,
+                      "max": 360,
+                      "min": -360,
+                      "mode": "mod"
+                    },
+                    "size": {
+                      "fixed": 10,
+                      "max": 15,
+                      "min": 2
+                    },
+                    "symbol": {
+                      "fixed": "img/icons/marker/triangle.svg",
+                      "mode": "fixed"
+                    },
+                    "text": {
+                      "field": "code",
+                      "fixed": "",
+                      "mode": "field"
+                    },
+                    "textConfig": {
+                      "fontSize": 15,
+                      "offsetX": 30,
+                      "offsetY": 0,
+                      "textAlign": "center",
+                      "textBaseline": "middle"
+                    }
+                  }
+                },
+                "location": {
+                  "mode": "auto"
+                },
+                "name": "Layer 1",
+                "tooltip": true,
+                "type": "markers"
+              }
+            ],
+            "tooltip": {
+              "mode": "details"
+            },
+            "view": {
+              "allLayers": true,
+              "id": "coords",
+              "lat": -39.277374,
+              "lon": 175.571106,
+              "zoom": 12.25
             }
           },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
+          "pluginVersion": "9.3.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "geonet-seismic-sensor",
+                "uid": "dzoN_rM4k"
               },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 14,
-        "w": 12,
-        "x": 6,
-        "y": 2
-      },
-      "id": 24,
-      "options": {
-        "basemap": {
-          "config": {
-            "server": "topo"
-          },
-          "name": "Layer 0",
-          "type": "esri-xyz"
-        },
-        "controls": {
-          "mouseWheelZoom": true,
-          "showAttribution": true,
-          "showDebug": false,
-          "showScale": false,
-          "showZoom": true
-        },
-        "layers": [
-          {
-            "config": {
-              "showLegend": false,
-              "style": {
-                "color": {
-                  "fixed": "red"
-                },
-                "opacity": 1,
-                "rotation": {
-                  "fixed": 0,
-                  "max": 360,
-                  "min": -360,
-                  "mode": "mod"
-                },
-                "size": {
-                  "fixed": 10,
-                  "max": 15,
-                  "min": 2
-                },
-                "symbol": {
-                  "fixed": "img/icons/marker/triangle.svg",
-                  "mode": "fixed"
-                },
-                "text": {
-                  "field": "code",
-                  "fixed": "",
-                  "mode": "field"
-                },
-                "textConfig": {
-                  "fontSize": 15,
-                  "offsetX": 30,
-                  "offsetY": 0,
-                  "textAlign": "center",
-                  "textBaseline": "middle"
-                }
-              }
+              "refId": "A",
+              "sensor": "broadband",
+              "stationid": "MAVZ"
             },
-            "location": {
-              "mode": "auto"
+            {
+              "datasource": {
+                "type": "geonet-seismic-sensor",
+                "uid": "dzoN_rM4k"
+              },
+              "hide": false,
+              "refId": "B",
+              "sensor": "broadband",
+              "stationid": "FWVZ"
             },
-            "name": "Layer 1",
-            "tooltip": true,
-            "type": "markers"
-          }
-        ],
-        "view": {
-          "id": "coords",
-          "lat": -39.277374,
-          "lon": 175.571106,
-          "zoom": 12.25
-        }
-      },
-      "pluginVersion": "9.0.0",
-      "targets": [
-        {
-          "datasource": {
-            "type": "geonet-seismic-sensor",
-            "uid": "dzoN_rM4k"
-          },
-          "refId": "A",
-          "sensor": "broadband",
-          "stationid": "MAVZ"
-        },
-        {
-          "datasource": {
-            "type": "geonet-seismic-sensor",
-            "uid": "dzoN_rM4k"
-          },
-          "hide": false,
-          "refId": "B",
-          "sensor": "broadband",
-          "stationid": "FWVZ"
-        },
-        {
-          "datasource": {
-            "type": "geonet-seismic-sensor",
-            "uid": "dzoN_rM4k"
-          },
-          "hide": false,
-          "refId": "C",
-          "sensor": "broadband",
-          "stationid": "TRVZ"
-        },
-        {
-          "datasource": {
-            "type": "geonet-seismic-sensor",
-            "uid": "dzoN_rM4k"
-          },
-          "hide": false,
-          "refId": "D",
-          "sensor": "broadband",
-          "stationid": "WHVZ"
+            {
+              "datasource": {
+                "type": "geonet-seismic-sensor",
+                "uid": "dzoN_rM4k"
+              },
+              "hide": false,
+              "refId": "C",
+              "sensor": "broadband",
+              "stationid": "TRVZ"
+            },
+            {
+              "datasource": {
+                "type": "geonet-seismic-sensor",
+                "uid": "dzoN_rM4k"
+              },
+              "hide": false,
+              "refId": "D",
+              "sensor": "broadband",
+              "stationid": "WHVZ"
+            }
+          ],
+          "transformations": [
+            {
+              "id": "merge",
+              "options": {}
+            }
+          ],
+          "type": "geomap"
         }
       ],
-      "transformations": [
-        {
-          "id": "merge",
-          "options": {}
-        }
-      ],
-      "type": "geomap"
+      "title": "GeoNet Broad Band Stations",
+      "type": "row"
     },
     {
       "collapsed": true,
@@ -380,7 +413,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 16
+        "y": 8
       },
       "id": 33,
       "panels": [
@@ -393,7 +426,7 @@
             "h": 11,
             "w": 6,
             "x": 0,
-            "y": 3
+            "y": 19
           },
           "id": 8,
           "options": {
@@ -479,7 +512,7 @@
             "h": 11,
             "w": 6,
             "x": 6,
-            "y": 3
+            "y": 19
           },
           "id": 12,
           "options": {
@@ -565,7 +598,7 @@
             "h": 11,
             "w": 6,
             "x": 12,
-            "y": 3
+            "y": 19
           },
           "id": 15,
           "options": {
@@ -651,7 +684,7 @@
             "h": 11,
             "w": 6,
             "x": 18,
-            "y": 3
+            "y": 19
           },
           "id": 27,
           "options": {
@@ -737,7 +770,7 @@
             "h": 5,
             "w": 6,
             "x": 0,
-            "y": 14
+            "y": 30
           },
           "id": 14,
           "options": {
@@ -822,7 +855,7 @@
             "h": 5,
             "w": 6,
             "x": 6,
-            "y": 14
+            "y": 30
           },
           "id": 17,
           "options": {
@@ -907,7 +940,7 @@
             "h": 5,
             "w": 6,
             "x": 12,
-            "y": 14
+            "y": 30
           },
           "id": 18,
           "options": {
@@ -992,7 +1025,7 @@
             "h": 5,
             "w": 6,
             "x": 18,
-            "y": 14
+            "y": 30
           },
           "id": 28,
           "options": {
@@ -1077,7 +1110,7 @@
             "h": 11,
             "w": 6,
             "x": 0,
-            "y": 19
+            "y": 35
           },
           "id": 13,
           "options": {
@@ -1162,7 +1195,7 @@
             "h": 11,
             "w": 6,
             "x": 6,
-            "y": 19
+            "y": 35
           },
           "id": 16,
           "options": {
@@ -1247,7 +1280,7 @@
             "h": 11,
             "w": 6,
             "x": 12,
-            "y": 19
+            "y": 35
           },
           "id": 19,
           "options": {
@@ -1332,7 +1365,7 @@
             "h": 11,
             "w": 6,
             "x": 18,
-            "y": 19
+            "y": 35
           },
           "id": 29,
           "options": {
@@ -1414,7 +1447,7 @@
     }
   ],
   "refresh": "",
-  "schemaVersion": 36,
+  "schemaVersion": 37,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -1454,6 +1487,6 @@
   "timezone": "browser",
   "title": "High-Rate Ruapehu",
   "uid": "Y7XSZRRVk",
-  "version": 66,
+  "version": 3,
   "weekStart": ""
 }

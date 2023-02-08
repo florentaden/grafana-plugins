@@ -24,17 +24,45 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 1,
+  "id": 20,
   "links": [],
   "liveNow": false,
   "panels": [
+    {
+      "gridPos": {
+        "h": 7,
+        "w": 4,
+        "x": 0,
+        "y": 0
+      },
+      "id": 86,
+      "libraryPanel": {
+        "name": "Ruapehu Dashboards",
+        "uid": "5_h0gl0Vk"
+      },
+      "title": "Ruapehu Dashboards"
+    },
+    {
+      "gridPos": {
+        "h": 6,
+        "w": 4,
+        "x": 4,
+        "y": 0
+      },
+      "id": 88,
+      "libraryPanel": {
+        "name": "General Dashboards",
+        "uid": "Fe6SRlAVz"
+      },
+      "title": "General Dashboards"
+    },
     {
       "collapsed": false,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 0
+        "y": 7
       },
       "id": 84,
       "panels": [],
@@ -52,6 +80,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "North (mm)",
             "axisPlacement": "left",
             "axisSoftMax": 25,
@@ -160,14 +190,15 @@
         "h": 5,
         "w": 6,
         "x": 0,
-        "y": 1
+        "y": 8
       },
       "id": 67,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "single",
@@ -255,6 +286,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "North (mm)",
             "axisPlacement": "left",
             "axisSoftMax": 25,
@@ -363,14 +396,15 @@
         "h": 5,
         "w": 6,
         "x": 6,
-        "y": 1
+        "y": 8
       },
       "id": 70,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "single",
@@ -458,6 +492,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "North (mm)",
             "axisPlacement": "left",
             "axisSoftMax": 25,
@@ -566,14 +602,15 @@
         "h": 5,
         "w": 6,
         "x": 12,
-        "y": 1
+        "y": 8
       },
       "id": 73,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "single",
@@ -661,6 +698,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "North (mm)",
             "axisPlacement": "left",
             "axisSoftMax": 25,
@@ -769,14 +808,15 @@
         "h": 5,
         "w": 6,
         "x": 18,
-        "y": 1
+        "y": 8
       },
       "id": 76,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "single",
@@ -864,6 +904,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "East (mm)",
             "axisPlacement": "left",
             "barAlignment": 0,
@@ -970,14 +1012,15 @@
         "h": 4,
         "w": 6,
         "x": 0,
-        "y": 6
+        "y": 13
       },
       "id": 68,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "single",
@@ -1067,6 +1110,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "East (mm)",
             "axisPlacement": "left",
             "barAlignment": 0,
@@ -1173,14 +1218,15 @@
         "h": 4,
         "w": 6,
         "x": 6,
-        "y": 6
+        "y": 13
       },
       "id": 71,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "single",
@@ -1270,6 +1316,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "East (mm)",
             "axisPlacement": "left",
             "barAlignment": 0,
@@ -1376,14 +1424,15 @@
         "h": 4,
         "w": 6,
         "x": 12,
-        "y": 6
+        "y": 13
       },
       "id": 74,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "single",
@@ -1473,6 +1522,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "East (mm)",
             "axisPlacement": "left",
             "barAlignment": 0,
@@ -1579,14 +1630,15 @@
         "h": 4,
         "w": 6,
         "x": 18,
-        "y": 6
+        "y": 13
       },
       "id": 77,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "single",
@@ -1676,6 +1728,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "Up (mm)",
             "axisPlacement": "left",
             "barAlignment": 0,
@@ -1782,14 +1836,15 @@
         "h": 4,
         "w": 6,
         "x": 0,
-        "y": 10
+        "y": 17
       },
       "id": 69,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "single",
@@ -1880,6 +1935,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "Up (mm)",
             "axisPlacement": "left",
             "barAlignment": 0,
@@ -1986,14 +2043,15 @@
         "h": 4,
         "w": 6,
         "x": 6,
-        "y": 10
+        "y": 17
       },
       "id": 72,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "single",
@@ -2084,6 +2142,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "Up (mm)",
             "axisPlacement": "left",
             "barAlignment": 0,
@@ -2190,14 +2250,15 @@
         "h": 4,
         "w": 6,
         "x": 12,
-        "y": 10
+        "y": 17
       },
       "id": 75,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "single",
@@ -2288,6 +2349,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "Up (mm)",
             "axisPlacement": "left",
             "barAlignment": 0,
@@ -2394,14 +2457,15 @@
         "h": 4,
         "w": 6,
         "x": 18,
-        "y": 10
+        "y": 17
       },
       "id": 78,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "single",
@@ -2515,7 +2579,7 @@
         "h": 11,
         "w": 12,
         "x": 0,
-        "y": 14
+        "y": 21
       },
       "id": 60,
       "options": {
@@ -2528,6 +2592,7 @@
           "mouseWheelZoom": true,
           "showAttribution": true,
           "showDebug": true,
+          "showMeasure": false,
           "showScale": true,
           "showZoom": true
         },
@@ -2579,14 +2644,18 @@
             "type": "markers"
           }
         ],
+        "tooltip": {
+          "mode": "details"
+        },
         "view": {
+          "allLayers": true,
           "id": "fit",
           "lat": -39.255372,
           "lon": 175.580765,
           "zoom": 15
         }
       },
-      "pluginVersion": "9.0.0",
+      "pluginVersion": "9.3.1",
       "targets": [
         {
           "datasource": {
@@ -2639,7 +2708,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 25
+        "y": 32
       },
       "id": 82,
       "panels": [],
@@ -2668,8 +2737,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -2684,7 +2752,7 @@
         "h": 12,
         "w": 6,
         "x": 9,
-        "y": 26
+        "y": 33
       },
       "id": 24,
       "options": {
@@ -2843,8 +2911,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -2859,14 +2926,15 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 38
+        "y": 45
       },
       "id": 26,
       "options": {
         "legend": {
           "calcs": [],
           "displayMode": "list",
-          "placement": "bottom"
+          "placement": "bottom",
+          "showLegend": true
         },
         "tooltip": {
           "mode": "single",
@@ -2955,8 +3023,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -2996,14 +3063,15 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 38
+        "y": 45
       },
       "id": 38,
       "options": {
         "legend": {
           "calcs": [],
           "displayMode": "list",
-          "placement": "bottom"
+          "placement": "bottom",
+          "showLegend": true
         },
         "tooltip": {
           "mode": "single",
@@ -3095,8 +3163,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -3112,14 +3179,15 @@
         "h": 5,
         "w": 24,
         "x": 0,
-        "y": 46
+        "y": 53
       },
       "id": 35,
       "options": {
         "legend": {
           "calcs": [],
           "displayMode": "list",
-          "placement": "bottom"
+          "placement": "bottom",
+          "showLegend": true
         },
         "tooltip": {
           "mode": "single",
@@ -3207,8 +3275,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -3237,14 +3304,15 @@
         "h": 6,
         "w": 24,
         "x": 0,
-        "y": 51
+        "y": 58
       },
       "id": 40,
       "options": {
         "legend": {
           "calcs": [],
           "displayMode": "list",
-          "placement": "bottom"
+          "placement": "bottom",
+          "showLegend": true
         },
         "tooltip": {
           "mode": "single",
@@ -3387,8 +3455,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -3417,14 +3484,15 @@
         "h": 6,
         "w": 24,
         "x": 0,
-        "y": 57
+        "y": 64
       },
       "id": 41,
       "options": {
         "legend": {
           "calcs": [],
           "displayMode": "list",
-          "placement": "bottom"
+          "placement": "bottom",
+          "showLegend": true
         },
         "tooltip": {
           "mode": "single",
@@ -3567,8 +3635,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -3597,14 +3664,15 @@
         "h": 6,
         "w": 24,
         "x": 0,
-        "y": 63
+        "y": 70
       },
       "id": 42,
       "options": {
         "legend": {
           "calcs": [],
           "displayMode": "list",
-          "placement": "bottom"
+          "placement": "bottom",
+          "showLegend": true
         },
         "tooltip": {
           "mode": "single",
@@ -3696,7 +3764,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 69
+        "y": 76
       },
       "id": 80,
       "panels": [],
@@ -3746,8 +3814,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           }
@@ -3771,14 +3838,15 @@
         "h": 5,
         "w": 15,
         "x": 0,
-        "y": 70
+        "y": 77
       },
       "id": 48,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "single",
@@ -3841,8 +3909,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           }
@@ -3853,7 +3920,7 @@
         "h": 15,
         "w": 9,
         "x": 15,
-        "y": 70
+        "y": 77
       },
       "id": 44,
       "options": {
@@ -3998,8 +4065,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           }
@@ -4010,14 +4076,15 @@
         "h": 5,
         "w": 15,
         "x": 0,
-        "y": 75
+        "y": 82
       },
       "id": 49,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "multi",
@@ -4105,8 +4172,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -4118,14 +4184,15 @@
         "h": 5,
         "w": 15,
         "x": 0,
-        "y": 80
+        "y": 87
       },
       "id": 50,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom"
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
         },
         "tooltip": {
           "mode": "single",
@@ -4170,7 +4237,7 @@
     }
   ],
   "refresh": false,
-  "schemaVersion": 36,
+  "schemaVersion": 37,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -4197,6 +4264,6 @@
   "timezone": "",
   "title": "Low-Rate Ruapehu",
   "uid": "Dl-Mr9e7z",
-  "version": 154,
+  "version": 3,
   "weekStart": ""
 }
