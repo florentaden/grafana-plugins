@@ -24,18 +24,31 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 6,
-  "iteration": 1669957915421,
+  "id": 8,
   "links": [],
   "liveNow": false,
   "panels": [
+    {
+      "gridPos": {
+        "h": 6,
+        "w": 4,
+        "x": 0,
+        "y": 0
+      },
+      "id": 21,
+      "libraryPanel": {
+        "name": "General Dashboards",
+        "uid": "Fe6SRlAVz"
+      },
+      "title": "General Dashboards"
+    },
     {
       "collapsed": false,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 0
+        "y": 6
       },
       "id": 19,
       "panels": [],
@@ -51,7 +64,7 @@
         "h": 18,
         "w": 12,
         "x": 0,
-        "y": 1
+        "y": 7
       },
       "id": 16,
       "options": {
@@ -62,6 +75,7 @@
           "base_url": "",
           "enable": false,
           "metric_field": "",
+          "open_in_tab": true,
           "suffix": ""
         },
         "overlay": {
@@ -81,10 +95,15 @@
             "unit": "%"
           }
         },
+        "shared_cross_hair": {
+          "backgroundColor": "#FFFFFF10",
+          "borderColor": "#FFFFFF20"
+        },
         "singleFill": true,
         "slideshow": {
           "duration": 3000,
           "enable": true,
+          "infinite": true,
           "pauseOnHover": true,
           "transition": "Fade",
           "transition_duration": 1000
@@ -131,7 +150,7 @@
         "h": 18,
         "w": 12,
         "x": 12,
-        "y": 1
+        "y": 7
       },
       "id": 17,
       "options": {
@@ -142,6 +161,7 @@
           "base_url": "",
           "enable": false,
           "metric_field": "",
+          "open_in_tab": true,
           "suffix": ""
         },
         "overlay": {
@@ -161,10 +181,15 @@
             "unit": "%"
           }
         },
+        "shared_cross_hair": {
+          "backgroundColor": "#FFFFFF10",
+          "borderColor": "#FFFFFF20"
+        },
         "singleFill": true,
         "slideshow": {
           "duration": 3000,
           "enable": true,
+          "infinite": true,
           "pauseOnHover": true,
           "transition": "Fade",
           "transition_duration": 1000
@@ -207,7 +232,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 19
+        "y": 25
       },
       "id": 4,
       "title": "Latest Image (All Volcanoes)",
@@ -222,7 +247,7 @@
         "h": 25,
         "w": 24,
         "x": 0,
-        "y": 20
+        "y": 26
       },
       "id": 6,
       "options": {
@@ -233,6 +258,7 @@
           "base_url": "",
           "enable": true,
           "metric_field": "imageName",
+          "open_in_tab": true,
           "suffix": ""
         },
         "overlay": {
@@ -252,10 +278,15 @@
             "unit": "%"
           }
         },
+        "shared_cross_hair": {
+          "backgroundColor": "#FFFFFF10",
+          "borderColor": "#FFFFFF20"
+        },
         "singleFill": true,
         "slideshow": {
           "duration": 5000,
           "enable": false,
+          "infinite": true,
           "pauseOnHover": true,
           "transition": "Slide",
           "transition_duration": 1000
@@ -389,7 +420,7 @@
     }
   ],
   "refresh": "",
-  "schemaVersion": 36,
+  "schemaVersion": 37,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -576,8 +607,8 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "Volcano Camera",
+  "title": "General - Volcano Cameras",
   "uid": "33c9WZVVk",
-  "version": 60,
+  "version": 4,
   "weekStart": ""
 }
