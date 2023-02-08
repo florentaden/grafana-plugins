@@ -24,23 +24,36 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 12,
+  "id": 15,
   "links": [],
   "liveNow": false,
   "panels": [
     {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
       "gridPos": {
-        "h": 5,
+        "h": 6,
         "w": 4,
         "x": 0,
         "y": 0
       },
       "id": 102,
-      "libraryPanel": {
-        "name": "General Dashboards",
-        "uid": "Fe6SRlAVz"
+      "options": {
+        "maxItems": 10,
+        "query": "General",
+        "showHeadings": false,
+        "showRecentlyViewed": false,
+        "showSearch": true,
+        "showStarred": false,
+        "tags": []
       },
-      "title": "General Dashboards"
+      "pluginVersion": "9.3.1",
+      "title": "General Dashboards",
+      "transparent": true,
+      "type": "dashlist"
     },
     {
       "collapsed": false,
@@ -48,7 +61,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 5
+        "y": 6
       },
       "id": 7,
       "panels": [],
@@ -95,7 +108,7 @@
         "h": 16,
         "w": 8,
         "x": 0,
-        "y": 6
+        "y": 7
       },
       "id": 100,
       "options": {
@@ -278,7 +291,7 @@
         "h": 8,
         "w": 4,
         "x": 8,
-        "y": 6
+        "y": 7
       },
       "id": 10,
       "options": {
@@ -406,7 +419,7 @@
         "h": 8,
         "w": 4,
         "x": 12,
-        "y": 6
+        "y": 7
       },
       "id": 11,
       "options": {
@@ -534,7 +547,7 @@
         "h": 8,
         "w": 4,
         "x": 16,
-        "y": 6
+        "y": 7
       },
       "id": 12,
       "options": {
@@ -662,7 +675,7 @@
         "h": 8,
         "w": 4,
         "x": 20,
-        "y": 6
+        "y": 7
       },
       "id": 17,
       "options": {
@@ -790,7 +803,7 @@
         "h": 8,
         "w": 4,
         "x": 8,
-        "y": 14
+        "y": 15
       },
       "id": 15,
       "options": {
@@ -918,7 +931,7 @@
         "h": 8,
         "w": 4,
         "x": 12,
-        "y": 14
+        "y": 15
       },
       "id": 16,
       "options": {
@@ -1046,7 +1059,7 @@
         "h": 8,
         "w": 4,
         "x": 16,
-        "y": 14
+        "y": 15
       },
       "id": 22,
       "options": {
@@ -1174,7 +1187,7 @@
         "h": 8,
         "w": 4,
         "x": 20,
-        "y": 14
+        "y": 15
       },
       "id": 21,
       "options": {
@@ -1302,7 +1315,7 @@
         "h": 8,
         "w": 4,
         "x": 0,
-        "y": 22
+        "y": 23
       },
       "id": 4,
       "options": {
@@ -1430,7 +1443,7 @@
         "h": 8,
         "w": 4,
         "x": 4,
-        "y": 22
+        "y": 23
       },
       "id": 9,
       "options": {
@@ -1558,7 +1571,7 @@
         "h": 8,
         "w": 4,
         "x": 8,
-        "y": 22
+        "y": 23
       },
       "id": 20,
       "options": {
@@ -1686,7 +1699,7 @@
         "h": 8,
         "w": 4,
         "x": 12,
-        "y": 22
+        "y": 23
       },
       "id": 26,
       "options": {
@@ -1814,7 +1827,7 @@
         "h": 8,
         "w": 4,
         "x": 16,
-        "y": 22
+        "y": 23
       },
       "id": 25,
       "options": {
@@ -1942,7 +1955,7 @@
         "h": 8,
         "w": 4,
         "x": 20,
-        "y": 22
+        "y": 23
       },
       "id": 13,
       "options": {
@@ -2069,7 +2082,7 @@
         "h": 8,
         "w": 4,
         "x": 0,
-        "y": 30
+        "y": 31
       },
       "id": 18,
       "options": {
@@ -2196,7 +2209,7 @@
         "h": 8,
         "w": 4,
         "x": 4,
-        "y": 30
+        "y": 31
       },
       "id": 14,
       "options": {
@@ -2323,7 +2336,7 @@
         "h": 8,
         "w": 4,
         "x": 8,
-        "y": 30
+        "y": 31
       },
       "id": 23,
       "options": {
@@ -2450,7 +2463,7 @@
         "h": 8,
         "w": 4,
         "x": 12,
-        "y": 30
+        "y": 31
       },
       "id": 27,
       "options": {
@@ -2577,7 +2590,7 @@
         "h": 8,
         "w": 4,
         "x": 16,
-        "y": 30
+        "y": 31
       },
       "id": 19,
       "options": {
@@ -2704,7 +2717,7 @@
         "h": 8,
         "w": 4,
         "x": 20,
-        "y": 30
+        "y": 31
       },
       "id": 29,
       "options": {
@@ -2831,7 +2844,7 @@
         "h": 8,
         "w": 4,
         "x": 0,
-        "y": 38
+        "y": 39
       },
       "id": 28,
       "options": {
@@ -2958,7 +2971,7 @@
         "h": 8,
         "w": 4,
         "x": 4,
-        "y": 38
+        "y": 39
       },
       "id": 24,
       "options": {
@@ -3113,6 +3126,6 @@
   "timezone": "",
   "title": "Chemistry Rotorua",
   "uid": "dVlPntA4z",
-  "version": 4,
+  "version": 2,
   "weekStart": ""
 }
