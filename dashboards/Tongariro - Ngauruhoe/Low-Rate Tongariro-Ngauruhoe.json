@@ -24,17 +24,45 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 13,
+  "id": 7,
   "links": [],
   "liveNow": false,
   "panels": [
+    {
+      "gridPos": {
+        "h": 8,
+        "w": 5,
+        "x": 0,
+        "y": 0
+      },
+      "id": 80,
+      "libraryPanel": {
+        "name": "Tongariro and Ngauruhoe Dashboards",
+        "uid": "oPkPg_AVz"
+      },
+      "title": "Tongariro and Ngauruhoe Dashboards"
+    },
+    {
+      "gridPos": {
+        "h": 6,
+        "w": 4,
+        "x": 5,
+        "y": 0
+      },
+      "id": 82,
+      "libraryPanel": {
+        "name": "General Dashboards",
+        "uid": "Fe6SRlAVz"
+      },
+      "title": "General Dashboards"
+    },
     {
       "collapsed": false,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 0
+        "y": 8
       },
       "id": 67,
       "panels": [],
@@ -75,7 +103,7 @@
         "h": 13,
         "w": 6,
         "x": 0,
-        "y": 1
+        "y": 9
       },
       "id": 60,
       "options": {
@@ -341,7 +369,7 @@
         "h": 6,
         "w": 6,
         "x": 6,
-        "y": 1
+        "y": 9
       },
       "id": 74,
       "options": {
@@ -546,7 +574,7 @@
         "h": 6,
         "w": 6,
         "x": 6,
-        "y": 7
+        "y": 15
       },
       "id": 76,
       "options": {
@@ -753,7 +781,7 @@
         "h": 5,
         "w": 6,
         "x": 6,
-        "y": 13
+        "y": 21
       },
       "id": 78,
       "options": {
@@ -847,7 +875,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 18
+        "y": 26
       },
       "id": 71,
       "panels": [],
@@ -876,8 +904,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           }
@@ -888,7 +915,7 @@
         "h": 15,
         "w": 7,
         "x": 0,
-        "y": 19
+        "y": 27
       },
       "id": 44,
       "options": {
@@ -1037,8 +1064,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           }
@@ -1062,7 +1088,7 @@
         "h": 5,
         "w": 17,
         "x": 7,
-        "y": 19
+        "y": 27
       },
       "id": 48,
       "options": {
@@ -1156,8 +1182,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           }
@@ -1168,7 +1193,7 @@
         "h": 5,
         "w": 17,
         "x": 7,
-        "y": 24
+        "y": 32
       },
       "id": 49,
       "options": {
@@ -1266,8 +1291,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -1279,7 +1303,7 @@
         "h": 5,
         "w": 17,
         "x": 7,
-        "y": 29
+        "y": 37
       },
       "id": 50,
       "options": {
@@ -1359,6 +1383,6 @@
   "timezone": "",
   "title": "Low-Rate Tongariro - Ngauruhoe",
   "uid": "Xlun9QIVz",
-  "version": 6,
+  "version": 2,
   "weekStart": ""
 }

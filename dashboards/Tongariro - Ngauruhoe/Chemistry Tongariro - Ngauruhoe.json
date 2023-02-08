@@ -24,17 +24,58 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 21,
+  "id": 13,
   "links": [],
   "liveNow": false,
   "panels": [
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
+      "gridPos": {
+        "h": 8,
+        "w": 5,
+        "x": 0,
+        "y": 0
+      },
+      "id": 102,
+      "options": {
+        "maxItems": 10,
+        "query": "Tonga",
+        "showHeadings": false,
+        "showRecentlyViewed": false,
+        "showSearch": true,
+        "showStarred": false,
+        "tags": []
+      },
+      "pluginVersion": "9.3.1",
+      "title": "Tongariro and Ngauruhoe Dashboards",
+      "transparent": true,
+      "type": "dashlist"
+    },
+    {
+      "gridPos": {
+        "h": 8,
+        "w": 4,
+        "x": 5,
+        "y": 0
+      },
+      "id": 104,
+      "libraryPanel": {
+        "name": "General Dashboards",
+        "uid": "Fe6SRlAVz"
+      },
+      "title": "General Dashboards"
+    },
     {
       "collapsed": false,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 0
+        "y": 8
       },
       "id": 7,
       "panels": [],
@@ -81,7 +122,7 @@
         "h": 16,
         "w": 8,
         "x": 0,
-        "y": 1
+        "y": 9
       },
       "id": 100,
       "options": {
@@ -135,7 +176,7 @@
             "location": {
               "mode": "auto"
             },
-            "name": "Whakaari / White Island",
+            "name": "Tongariro and Ngauruhoe",
             "tooltip": true,
             "type": "markers"
           }
@@ -264,7 +305,7 @@
         "h": 8,
         "w": 4,
         "x": 8,
-        "y": 1
+        "y": 9
       },
       "id": 10,
       "options": {
@@ -392,7 +433,7 @@
         "h": 8,
         "w": 4,
         "x": 12,
-        "y": 1
+        "y": 9
       },
       "id": 11,
       "options": {
@@ -520,7 +561,7 @@
         "h": 8,
         "w": 4,
         "x": 16,
-        "y": 1
+        "y": 9
       },
       "id": 12,
       "options": {
@@ -648,7 +689,7 @@
         "h": 8,
         "w": 4,
         "x": 20,
-        "y": 1
+        "y": 9
       },
       "id": 17,
       "options": {
@@ -776,7 +817,7 @@
         "h": 8,
         "w": 4,
         "x": 8,
-        "y": 9
+        "y": 17
       },
       "id": 15,
       "options": {
@@ -904,7 +945,7 @@
         "h": 8,
         "w": 4,
         "x": 12,
-        "y": 9
+        "y": 17
       },
       "id": 16,
       "options": {
@@ -1032,7 +1073,7 @@
         "h": 8,
         "w": 4,
         "x": 16,
-        "y": 9
+        "y": 17
       },
       "id": 22,
       "options": {
@@ -1160,7 +1201,7 @@
         "h": 8,
         "w": 4,
         "x": 20,
-        "y": 9
+        "y": 17
       },
       "id": 21,
       "options": {
@@ -1272,8 +1313,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1288,7 +1328,7 @@
         "h": 8,
         "w": 4,
         "x": 0,
-        "y": 17
+        "y": 25
       },
       "id": 4,
       "options": {
@@ -1400,8 +1440,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1416,7 +1455,7 @@
         "h": 8,
         "w": 4,
         "x": 4,
-        "y": 17
+        "y": 25
       },
       "id": 9,
       "options": {
@@ -1528,8 +1567,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1544,7 +1582,7 @@
         "h": 8,
         "w": 4,
         "x": 8,
-        "y": 17
+        "y": 25
       },
       "id": 20,
       "options": {
@@ -1656,8 +1694,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1672,7 +1709,7 @@
         "h": 8,
         "w": 4,
         "x": 12,
-        "y": 17
+        "y": 25
       },
       "id": 26,
       "options": {
@@ -1784,8 +1821,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1800,7 +1836,7 @@
         "h": 8,
         "w": 4,
         "x": 16,
-        "y": 17
+        "y": 25
       },
       "id": 25,
       "options": {
@@ -1912,8 +1948,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1928,7 +1963,7 @@
         "h": 8,
         "w": 4,
         "x": 20,
-        "y": 17
+        "y": 25
       },
       "id": 13,
       "options": {
@@ -2055,7 +2090,7 @@
         "h": 8,
         "w": 4,
         "x": 0,
-        "y": 25
+        "y": 33
       },
       "id": 18,
       "options": {
@@ -2182,7 +2217,7 @@
         "h": 8,
         "w": 4,
         "x": 4,
-        "y": 25
+        "y": 33
       },
       "id": 14,
       "options": {
@@ -2309,7 +2344,7 @@
         "h": 8,
         "w": 4,
         "x": 8,
-        "y": 25
+        "y": 33
       },
       "id": 23,
       "options": {
@@ -2436,7 +2471,7 @@
         "h": 8,
         "w": 4,
         "x": 12,
-        "y": 25
+        "y": 33
       },
       "id": 27,
       "options": {
@@ -2563,7 +2598,7 @@
         "h": 8,
         "w": 4,
         "x": 16,
-        "y": 25
+        "y": 33
       },
       "id": 19,
       "options": {
@@ -2690,7 +2725,7 @@
         "h": 8,
         "w": 4,
         "x": 20,
-        "y": 25
+        "y": 33
       },
       "id": 29,
       "options": {
@@ -2817,7 +2852,7 @@
         "h": 8,
         "w": 4,
         "x": 0,
-        "y": 33
+        "y": 41
       },
       "id": 28,
       "options": {
@@ -2944,7 +2979,7 @@
         "h": 8,
         "w": 4,
         "x": 4,
-        "y": 33
+        "y": 41
       },
       "id": 24,
       "options": {
