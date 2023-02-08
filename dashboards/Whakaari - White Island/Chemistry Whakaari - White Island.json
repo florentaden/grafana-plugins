@@ -24,11 +24,16 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 2,
+  "id": 8,
   "links": [],
   "liveNow": false,
   "panels": [
     {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
       "gridPos": {
         "h": 7,
         "w": 4,
@@ -36,11 +41,19 @@
         "y": 0
       },
       "id": 102,
-      "libraryPanel": {
-        "name": "Whakaari Dashboards",
-        "uid": "F2cKg_AVz"
+      "options": {
+        "maxItems": 10,
+        "query": "Whakaari",
+        "showHeadings": false,
+        "showRecentlyViewed": false,
+        "showSearch": true,
+        "showStarred": false,
+        "tags": []
       },
-      "title": "Whakaari Dashboards"
+      "pluginVersion": "9.3.1",
+      "title": "Whakaari Dashboards",
+      "transparent": true,
+      "type": "dashlist"
     },
     {
       "datasource": {
@@ -3108,6 +3121,6 @@
   "timezone": "",
   "title": "Chemistry Whakaari - White Island",
   "uid": "IiBqSx24k",
-  "version": 4,
+  "version": 3,
   "weekStart": ""
 }

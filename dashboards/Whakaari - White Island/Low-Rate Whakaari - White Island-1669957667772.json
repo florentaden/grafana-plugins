@@ -24,37 +24,63 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 9,
+  "id": 10,
   "links": [],
   "liveNow": false,
   "panels": [
     {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
       "gridPos": {
-        "h": 7,
+        "h": 8,
         "w": 4,
         "x": 0,
         "y": 0
       },
       "id": 23,
-      "libraryPanel": {
-        "name": "Whakaari Dashboards",
-        "uid": "F2cKg_AVz"
+      "options": {
+        "maxItems": 10,
+        "query": "Whakaari",
+        "showHeadings": false,
+        "showRecentlyViewed": false,
+        "showSearch": true,
+        "showStarred": false,
+        "tags": []
       },
-      "title": "Whakaari Dashboards"
+      "pluginVersion": "9.3.1",
+      "title": "Whakaari Dashboards",
+      "transparent": true,
+      "type": "dashlist"
     },
     {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
       "gridPos": {
-        "h": 5,
+        "h": 8,
         "w": 4,
         "x": 4,
         "y": 0
       },
       "id": 25,
-      "libraryPanel": {
-        "name": "General Dashboards",
-        "uid": "Fe6SRlAVz"
+      "options": {
+        "maxItems": 10,
+        "query": "General",
+        "showHeadings": false,
+        "showRecentlyViewed": false,
+        "showSearch": true,
+        "showStarred": false,
+        "tags": []
       },
-      "title": "General Dashboards"
+      "pluginVersion": "9.3.1",
+      "title": "General Dashboards",
+      "transparent": true,
+      "type": "dashlist"
     },
     {
       "collapsed": true,
@@ -62,7 +88,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 7
+        "y": 8
       },
       "id": 19,
       "panels": [
@@ -75,7 +101,7 @@
             "h": 12,
             "w": 8,
             "x": 0,
-            "y": 17
+            "y": 33
           },
           "id": 2,
           "options": {
@@ -159,7 +185,7 @@
             "h": 12,
             "w": 8,
             "x": 8,
-            "y": 17
+            "y": 33
           },
           "id": 3,
           "options": {
@@ -271,7 +297,7 @@
             "h": 8,
             "w": 8,
             "x": 16,
-            "y": 17
+            "y": 33
           },
           "id": 13,
           "options": {
@@ -383,7 +409,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 8
+        "y": 9
       },
       "id": 11,
       "panels": [
@@ -491,7 +517,7 @@
             "h": 8,
             "w": 12,
             "x": 0,
-            "y": 18
+            "y": 34
           },
           "id": 21,
           "options": {
@@ -573,7 +599,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 9
+        "y": 10
       },
       "id": 7,
       "panels": [
@@ -614,7 +640,7 @@
             "h": 12,
             "w": 8,
             "x": 0,
-            "y": 19
+            "y": 35
           },
           "id": 9,
           "options": {
@@ -777,7 +803,7 @@
             "h": 4,
             "w": 16,
             "x": 8,
-            "y": 19
+            "y": 35
           },
           "id": 15,
           "options": {
@@ -899,7 +925,7 @@
             "h": 4,
             "w": 16,
             "x": 8,
-            "y": 23
+            "y": 39
           },
           "id": 16,
           "options": {
@@ -1022,7 +1048,7 @@
             "h": 4,
             "w": 16,
             "x": 8,
-            "y": 27
+            "y": 43
           },
           "id": 17,
           "options": {

@@ -24,11 +24,16 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 14,
+  "id": 9,
   "links": [],
   "liveNow": false,
   "panels": [
     {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
       "gridPos": {
         "h": 7,
         "w": 4,
@@ -36,13 +41,26 @@
         "y": 0
       },
       "id": 23,
-      "libraryPanel": {
-        "name": "Whakaari Dashboards",
-        "uid": "F2cKg_AVz"
+      "options": {
+        "maxItems": 10,
+        "query": "Whakaari",
+        "showHeadings": false,
+        "showRecentlyViewed": false,
+        "showSearch": true,
+        "showStarred": false,
+        "tags": []
       },
-      "title": "Whakaari Dashboards"
+      "pluginVersion": "9.3.1",
+      "title": "Whakaari Dashboards",
+      "transparent": true,
+      "type": "dashlist"
     },
     {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
       "gridPos": {
         "h": 5,
         "w": 4,
@@ -50,11 +68,19 @@
         "y": 0
       },
       "id": 25,
-      "libraryPanel": {
-        "name": "General Dashboards",
-        "uid": "Fe6SRlAVz"
+      "options": {
+        "maxItems": 10,
+        "query": "General",
+        "showHeadings": false,
+        "showRecentlyViewed": false,
+        "showSearch": true,
+        "showStarred": false,
+        "tags": []
       },
-      "title": "General Dashboards"
+      "pluginVersion": "9.3.1",
+      "title": "General Dashboards",
+      "transparent": true,
+      "type": "dashlist"
     },
     {
       "collapsed": true,
@@ -75,7 +101,7 @@
             "h": 18,
             "w": 23,
             "x": 0,
-            "y": 8
+            "y": 24
           },
           "id": 10,
           "options": {
@@ -218,7 +244,7 @@
             "h": 11,
             "w": 12,
             "x": 6,
-            "y": 9
+            "y": 25
           },
           "id": 14,
           "options": {
@@ -347,7 +373,7 @@
             "h": 17,
             "w": 12,
             "x": 0,
-            "y": 10
+            "y": 26
           },
           "id": 16,
           "options": {
@@ -431,7 +457,7 @@
             "h": 17,
             "w": 12,
             "x": 12,
-            "y": 10
+            "y": 26
           },
           "id": 17,
           "options": {
@@ -515,7 +541,7 @@
             "h": 8,
             "w": 12,
             "x": 0,
-            "y": 27
+            "y": 43
           },
           "id": 18,
           "options": {
@@ -593,7 +619,7 @@
             "h": 8,
             "w": 12,
             "x": 12,
-            "y": 27
+            "y": 43
           },
           "id": 19,
           "options": {
@@ -671,7 +697,7 @@
             "h": 17,
             "w": 12,
             "x": 0,
-            "y": 35
+            "y": 51
           },
           "id": 20,
           "options": {
@@ -749,7 +775,7 @@
             "h": 17,
             "w": 12,
             "x": 12,
-            "y": 35
+            "y": 51
           },
           "id": 21,
           "options": {
