@@ -24,7 +24,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 18,
+  "id": 22,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -33,6 +33,7 @@
         "type": "datasource",
         "uid": "grafana"
       },
+      "description": "",
       "gridPos": {
         "h": 7,
         "w": 4,
@@ -3120,6 +3121,6 @@
   "timezone": "",
   "title": "Chemistry Taupo",
   "uid": "IqRZMtA4k",
-  "version": 5,
+  "version": 2,
   "weekStart": ""
 }

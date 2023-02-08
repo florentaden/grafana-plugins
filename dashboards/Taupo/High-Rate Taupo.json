@@ -24,11 +24,16 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 21,
+  "id": 18,
   "links": [],
   "liveNow": false,
   "panels": [
     {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
       "gridPos": {
         "h": 7,
         "w": 4,
@@ -36,25 +41,46 @@
         "y": 0
       },
       "id": 65,
-      "libraryPanel": {
-        "name": "Taupo Dashboards",
-        "uid": "m28Igl0Vk"
+      "options": {
+        "maxItems": 10,
+        "query": "Taupo",
+        "showHeadings": false,
+        "showRecentlyViewed": false,
+        "showSearch": true,
+        "showStarred": false,
+        "tags": []
       },
-      "title": "Taupo Dashboards"
+      "pluginVersion": "9.3.1",
+      "title": "Taupo Dashboards",
+      "transparent": true,
+      "type": "dashlist"
     },
     {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
       "gridPos": {
-        "h": 5,
+        "h": 6,
         "w": 4,
         "x": 4,
         "y": 0
       },
       "id": 67,
-      "libraryPanel": {
-        "name": "General Dashboards",
-        "uid": "Fe6SRlAVz"
+      "options": {
+        "maxItems": 10,
+        "query": "General",
+        "showHeadings": false,
+        "showRecentlyViewed": false,
+        "showSearch": true,
+        "showStarred": false,
+        "tags": []
       },
-      "title": "General Dashboards"
+      "pluginVersion": "9.3.1",
+      "title": "General Dashboards",
+      "transparent": true,
+      "type": "dashlist"
     },
     {
       "collapsed": true,
@@ -88,8 +114,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -104,7 +129,7 @@
             "h": 16,
             "w": 9,
             "x": 7,
-            "y": 7
+            "y": 23
           },
           "id": 24,
           "options": {
@@ -283,7 +308,7 @@
             "h": 9,
             "w": 6,
             "x": 0,
-            "y": 8
+            "y": 24
           },
           "id": 41,
           "options": {
@@ -367,7 +392,7 @@
             "h": 9,
             "w": 6,
             "x": 6,
-            "y": 8
+            "y": 24
           },
           "id": 54,
           "options": {
@@ -451,7 +476,7 @@
             "h": 9,
             "w": 6,
             "x": 12,
-            "y": 8
+            "y": 24
           },
           "id": 52,
           "options": {
@@ -535,7 +560,7 @@
             "h": 9,
             "w": 6,
             "x": 18,
-            "y": 8
+            "y": 24
           },
           "id": 53,
           "options": {
@@ -619,7 +644,7 @@
             "h": 9,
             "w": 6,
             "x": 0,
-            "y": 17
+            "y": 33
           },
           "id": 51,
           "options": {
@@ -703,7 +728,7 @@
             "h": 9,
             "w": 6,
             "x": 6,
-            "y": 17
+            "y": 33
           },
           "id": 55,
           "options": {
@@ -787,7 +812,7 @@
             "h": 9,
             "w": 6,
             "x": 12,
-            "y": 17
+            "y": 33
           },
           "id": 56,
           "options": {
@@ -871,7 +896,7 @@
             "h": 9,
             "w": 6,
             "x": 18,
-            "y": 17
+            "y": 33
           },
           "id": 57,
           "options": {
@@ -955,7 +980,7 @@
             "h": 9,
             "w": 6,
             "x": 0,
-            "y": 26
+            "y": 42
           },
           "id": 58,
           "options": {
@@ -1039,7 +1064,7 @@
             "h": 9,
             "w": 6,
             "x": 6,
-            "y": 26
+            "y": 42
           },
           "id": 60,
           "options": {
@@ -1123,7 +1148,7 @@
             "h": 9,
             "w": 6,
             "x": 12,
-            "y": 26
+            "y": 42
           },
           "id": 62,
           "options": {
@@ -1207,7 +1232,7 @@
             "h": 9,
             "w": 6,
             "x": 0,
-            "y": 35
+            "y": 51
           },
           "id": 59,
           "options": {
@@ -1285,7 +1310,7 @@
             "h": 9,
             "w": 6,
             "x": 6,
-            "y": 35
+            "y": 51
           },
           "id": 61,
           "options": {
@@ -1363,7 +1388,7 @@
             "h": 9,
             "w": 6,
             "x": 12,
-            "y": 35
+            "y": 51
           },
           "id": 63,
           "options": {
@@ -1478,6 +1503,6 @@
   "timezone": "browser",
   "title": "High-Rate Taupo",
   "uid": "rf9d8wSVz",
-  "version": 4,
+  "version": 2,
   "weekStart": ""
 }
