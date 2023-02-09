@@ -81,6 +81,15 @@ const path =  "http://kaizen.gns.cri.nz:8000/data/?"; // assuming the rapidAPI c
 
 Change it to your {localhost}:{port} to make the plugin work. 
 
+## Building for AWS Deployments
+
+Run `./build.sh` to build the container image and tag it with AWS ECR style.
+Run `./push.sh` to push the image to AWS ECR.
+
+**Note: You might need AWS credential configured for your command line to run these.**
+
 ## TODO
 
-1. Currently plugin `sigrun-gnss` uses hard-coded URL to the datasource host. A way to configure it with environment variable would be ideal. However, can't find a way to support this in Grafana.
+1. Currently plugins built in dev mode only. There're some linting issue stop building to production mode.
+
+2. Currently plugin `sigrun-gnss` uses hard-coded URL to the datasource host. A way to configure it with environment variable would be ideal. However, can't find a way to support this in Grafana.
