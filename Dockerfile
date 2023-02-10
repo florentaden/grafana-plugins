@@ -41,7 +41,7 @@ USER root
 SHELL ["/bin/bash", "--login", "-i", "-c"]
 
 # -- install basics
-RUN apk add --update ca-certificates tzdata curl
+RUN apk add --update ca-certificates tzdata curl jq
 
 # -- custom plugins from builder
 COPY --from=builder /var/lib/grafana/plugins/dist /var/lib/grafana/plugins/
@@ -58,3 +58,11 @@ RUN grafana-cli plugins install aidanmountford-html-panel
 RUN grafana-cli plugins install marcusolsson-csv-datasource
 RUN grafana-cli plugins install marcusolsson-json-datasource
 
+# -- finally, extra scripts
+COPY post-init.sh /
+RUN chmod +x /post-init.sh
+
+COPY entrypoint.sh /
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT [ "/entrypoint.sh" ]
